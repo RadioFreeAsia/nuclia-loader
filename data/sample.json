@@ -89,7 +89,8 @@
             }
         ]
     }
-},{
+},
+    {
     "@id": "https://mandevview.rfaweb.org/mandarin/Xinwen/09-07112021170004.html",
     "@type": "story",
     "UID": "e2b02bd11a02457cb353c73e187c31a2",
@@ -277,7 +278,8 @@
             }
         ]
     }
-},{
+},
+    {
     "@id": "https://mandevview.rfaweb.org/mandarin/Xinwen/1-01012021103930.html",
     "@type": "story",
     "UID": "0167e68e4de84fbd98053eea132e6bba",
@@ -374,7 +376,8 @@
             }
         ]
     }
-},{
+},
+    {
     "@id": "https://mandevview.rfaweb.org/mandarin/Xinwen/1-01012022105220.html",
     "@type": "story",
     "UID": "e1d48939e22142a2aa43e7cf2b362329",
@@ -464,7 +467,8 @@
             }
         ]
     }
-},{
+},
+    {
     "@id": "https://mandevview.rfaweb.org/mandarin/Xinwen/1-01012023110200.html",
     "@type": "story",
     "UID": "9e9911e0d99a4ef1b2bfdebf82d28c36",
