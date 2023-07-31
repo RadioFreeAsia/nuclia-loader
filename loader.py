@@ -31,7 +31,7 @@ def load_all(filename):
         for item in objects:
 
             #fix the ID so it points to a published resource, not a test or dev uri
-            pattern = "*.\.rfaweb.org"
+            pattern = ".*\.rfaweb.org"
             item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
 
             #set description to None if it's blank:
@@ -46,6 +46,7 @@ def load_one(item):
     # the corresponding Nuclia-specific unique id.
     #
 
+    import pdb; pdb.set_trace()
     uri = f"{cloud_endpoint}/kb/{KB}"
     res = sdk.NucliaResource()
     res.create(
