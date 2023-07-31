@@ -1,3 +1,6 @@
 
 venv
 keys_confg.py
+
+data/*
+!data/sample.json
