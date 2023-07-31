@@ -1,11 +1,14 @@
 
 import argparse
+import re
 
 import ijson
 from nuclia import sdk
 from configuration import API_KEY
 from configuration import KB
 from configuration import cloud_endpoint
+
+
 
 def process_args():
     parser = argparse.ArgumentParser(description="Load nuclia with a json file from plone export."
@@ -26,6 +29,15 @@ def load_all(filename):
         objects = ijson.items(filep, 'item')
 
         for item in objects:
+
+            #fix the ID so it points to a published resource, not a test or dev uri
+            pattern = "*.\.rfaweb.org"
+            item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
+
+            #set description to None if it's blank:
+            if not item['description'] or item['description'].isspace():
+                item['description'] = None
+
             load_one(item)
 
 def load_one(item):
