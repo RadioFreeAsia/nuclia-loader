@@ -1,5 +1,7 @@
-import ijson
 
+import argparse
+
+import ijson
 from nuclia import sdk
 from configuration import API_KEY
 from configuration import KB
@@ -27,6 +29,7 @@ def load_all(filename):
             load_one(item)
 
 def load_one(item):
+    import pdb; pdb.set_trace()
     # The slug is your own unique id (so the Plone uid is probably a good one in your case),
     # it will allow you to access the created resource without having to store locally
     # the corresponding Nuclia-specific unique id.
@@ -47,7 +50,7 @@ def load_one(item):
         texts={
             "body": {
                 "body": "<the text body>",
-                "format": "text/html",
+                "format": "HTML",
             }
         },
     )
