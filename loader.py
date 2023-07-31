@@ -1,6 +1,7 @@
 
 import argparse
 import re
+import logging
 
 import ijson
 from nuclia import sdk
@@ -8,7 +9,8 @@ from configuration import API_KEY
 from configuration import KB
 from configuration import cloud_endpoint
 
-
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("nuclia loader")
 
 def process_args():
     parser = argparse.ArgumentParser(description="Load nuclia with a json file from plone export."
@@ -16,6 +18,9 @@ def process_args():
                                      usage="usage: loader.py <filename>")
     parser.add_argument("filename",
                         help="filename of json export")
+
+    parser.add_argument("-v", "--verbose",
+                        help="turn on debug")
 
     parsed_args = parser.parse_args()
 
@@ -33,10 +38,15 @@ def load_all(filename):
             #fix the ID so it points to a published resource, not a test or dev uri
             pattern = ".*\.rfaweb.org"
             item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
+            pattern = "https://.*\.benarnews.org"
+            item['@id'] = re.sub(pattern, "https://www.benarnews.org", item['@id'])
 
             #set description to None if it's blank:
             if not item['description'] or item['description'].isspace():
                 item['description'] = None
+
+            #clean the whitespace crap out of subjects:
+            item['subjects'] = list([tag for tag in item['subjects'] if (tag and not tag.isspace())])
 
             load_one(item)
 
@@ -46,8 +56,8 @@ def load_one(item):
     # the corresponding Nuclia-specific unique id.
     #
 
-    import pdb; pdb.set_trace()
     uri = f"{cloud_endpoint}/kb/{KB}"
+    logger.info(f"adding resource for {item['@id']}")
     res = sdk.NucliaResource()
     res.create(
         url=uri,
@@ -56,7 +66,7 @@ def load_one(item):
         slug=item['UID'],
         origin={
             "url": item['@id'],
-            "tags": [tag for tag in item['subjects'] if (tag and not tag.isspace())]
+            "tags": item['subjects']
         },
         summary=item['description'],
         texts={
@@ -66,6 +76,7 @@ def load_one(item):
             }
         },
     )
+
 
 
     # Using "tags" to store the subjects is fine, but you also can decide to use Nuclia labels,
@@ -80,4 +91,9 @@ def load_one(item):
 
 if __name__ == "__main__":
     args = process_args()
+
+    if args.verbose:
+        logging.getLogger().setLevel(logging.DEBUG)
+        logging.debug("debug on")
+
     load_all(args.filename)
