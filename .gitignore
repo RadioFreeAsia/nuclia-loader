@@ -4,3 +4,5 @@ keys_confg.py
 
 data/*
 !data/sample.json
+
+__pycache__
