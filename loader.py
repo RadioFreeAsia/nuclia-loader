@@ -48,7 +48,7 @@ def load_one(item):
         summary=item['description'],
         texts={
             "body": {
-                "body": "<the text body>",
+                "body": item['text']['data'],
                 "format": "HTML",
             }
         },
