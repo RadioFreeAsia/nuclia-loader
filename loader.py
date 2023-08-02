@@ -2,6 +2,7 @@
 import argparse
 import re
 import logging
+import urllib
 
 import ijson
 from nuclia import sdk
@@ -11,6 +12,22 @@ from configuration import cloud_endpoint
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("nuclia loader")
+
+LANGUAGES = {'english': 'en',
+             'korean': 'kr',
+             'vietnamese': 'vi',
+             'burmese': 'my',
+             'tibetan': 'bo',
+             'khmer': 'km',
+             'uyghur': 'ug',
+             'mandarin': 'zh-cn',
+             'cantonese': 'zh-yue',
+             'lao': 'lo',
+             'indonesian': 'id',
+             'bengali': 'bn',
+             'malay': 'ms-zsm',
+             'thai': 'th'
+             }
 
 def process_args():
     parser = argparse.ArgumentParser(description="Load nuclia with a json file from plone export."
@@ -48,6 +65,13 @@ def load_all(filename):
             #clean the whitespace crap out of subjects:
             item['subjects'] = list([tag for tag in item['subjects'] if (tag and not tag.isspace())])
 
+            # language must be inferred from URL
+            parsed = urllib.parse.urlparse(item['@id'])
+            language = parsed.path.split('/')[0]
+            language_code = LANGUAGES.get(language, "en")
+
+            item['langauge'] = {'title': langauge.capitalize(), 'token': language_code}
+
             load_one(item)
 
 def load_one(item):
@@ -64,9 +88,14 @@ def load_one(item):
         api_key=API_KEY,
         title=item['title'],
         slug=item['UID'],
+        metadata={
+            "language": item['language']['token'],
+        },
         origin={
             "url": item['@id'],
-            "tags": item['subjects']
+            "tags": item['subjects'],
+            "created": item['created'],
+            "modified": item['modified'],
         },
         summary=item['description'],
         texts={
@@ -76,8 +105,6 @@ def load_one(item):
             }
         },
     )
-
-
 
     # Using "tags" to store the subjects is fine, but you also can decide to use Nuclia labels,
     # like this:
