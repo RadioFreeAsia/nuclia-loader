@@ -70,7 +70,7 @@ def load_all(filename):
             language = parsed.path.split('/')[0]
             language_code = LANGUAGES.get(language, "en")
 
-            item['langauge'] = {'title': langauge.capitalize(), 'token': language_code}
+            item['langauge'] = {'title': language.capitalize(), 'token': language_code}
 
             load_one(item)
 
