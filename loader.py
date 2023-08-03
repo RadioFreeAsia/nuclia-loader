@@ -29,6 +29,24 @@ LANGUAGES = {'english': 'en',
              'thai': 'th'
              }
 
+LANGUAGE_LABELS = {'burmese': "Burmese",
+                   'cantonese': "Cantonese",
+                   'english': "English RFA",
+                   'khmer': "Khmer",
+                   'korean': "Korean",
+                   'lao': "Lao",
+                   'mandarin': "Mandarin",
+                   'tibetan': "Tibetan",
+                   'uyghur': "Uyghur",
+                   'vietnamese': "Vietnamese",
+                   'bengali': "Bengali",
+                   'english-benar': "English BenarNews",
+                   'indonesian': "Indonesian",
+                   'malay': "Malay",
+                   'thai': "Thai"
+}
+
+
 def process_args():
     parser = argparse.ArgumentParser(description="Load nuclia with a json file from plone export."
                                                  "Note only 'story' types are expected",
@@ -66,13 +84,20 @@ def load_all(filename):
             item['subjects'] = list([tag for tag in item['subjects'] if (tag and not tag.isspace())])
 
             # language must be inferred from URL
-            parsed = urllib.parse.urlparse(item['@id'])
-            language = parsed.path.split('/')[1]
+            parsed_url = urllib.parse.urlparse(item['@id'])
+            language = parsed_url.path.split('/')[1]
             language_code = LANGUAGES.get(language, "en")
 
             item['language'] = {'title': language.capitalize(), 'token': language_code}
 
-            load_one(item)
+            item['language_service'] = LANGUAGE_LABELS.get(language, 'unknown')
+            if language == 'english' and 'benar' in parsed_url.netloc:
+                item['language_service'] = "English BenarNews"
+
+            try:
+                load_one(item)
+            except Exception as e:
+                logger.error(e, exc_info=True)
 
 def load_one(item):
     # The slug is your own unique id (so the Plone uid is probably a good one in your case),
@@ -90,6 +115,11 @@ def load_one(item):
         slug=item['UID'],
         metadata={
             "language": item['language']['token'],
+        },
+        usermetadata={
+            "classifications": [
+                {"labelset": "Language Service", "label": item['language_service']},
+            ],
         },
         origin={
             "url": item['@id'],
