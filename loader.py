@@ -44,7 +44,7 @@ LANGUAGE_LABELS = {'burmese': "Burmese",
                    'indonesian': "Indonesian",
                    'malay': "Malay",
                    'thai': "Thai"
-}
+                   }
 
 
 def process_args():
@@ -70,17 +70,21 @@ def load_all(filename):
 
         for item in objects:
 
-            #fix the ID so it points to a published resource, not a test or dev uri
+            if "unexported_paths" in item and "@id" not in item:
+                # it's the error report at the end of the export - ignore it.
+                continue
+
+            # fix the ID, so it points to a published resource, not a test or dev uri
             pattern = ".*\.rfaweb.org"
             item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
             pattern = "https://.*\.benarnews.org"
             item['@id'] = re.sub(pattern, "https://www.benarnews.org", item['@id'])
 
-            #set description to None if it's blank:
+            # set description to None if it's blank:
             if not item['description'] or item['description'].isspace():
                 item['description'] = None
 
-            #clean the whitespace crap out of subjects:
+            # clean the whitespace crap out of subjects:
             item['subjects'] = list([tag for tag in item['subjects'] if (tag and not tag.isspace())])
 
             # language must be inferred from URL
@@ -98,6 +102,7 @@ def load_all(filename):
                 load_one(item)
             except Exception as e:
                 logger.error(e, exc_info=True)
+
 
 def load_one(item):
     # The slug is your own unique id (so the Plone uid is probably a good one in your case),
@@ -145,6 +150,7 @@ def load_one(item):
     #         {"labelset": "subjects", "label": "<Topic 2>"},
     #     ],
     # }
+
 
 if __name__ == "__main__":
     args = process_args()
