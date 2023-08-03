@@ -67,10 +67,10 @@ def load_all(filename):
 
             # language must be inferred from URL
             parsed = urllib.parse.urlparse(item['@id'])
-            language = parsed.path.split('/')[0]
+            language = parsed.path.split('/')[1]
             language_code = LANGUAGES.get(language, "en")
 
-            item['langauge'] = {'title': language.capitalize(), 'token': language_code}
+            item['language'] = {'title': language.capitalize(), 'token': language_code}
 
             load_one(item)
 
@@ -81,7 +81,7 @@ def load_one(item):
     #
 
     uri = f"{cloud_endpoint}/kb/{KB}"
-    logger.info(f"adding resource for {item['@id']}")
+    logger.info(f"adding resource for {item['@id']}, language {item['language']['token']}")
     res = sdk.NucliaResource()
     res.create(
         url=uri,
