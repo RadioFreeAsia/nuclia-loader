@@ -10,7 +10,9 @@ from configuration import API_KEY
 from configuration import KB
 from configuration import cloud_endpoint
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO,
+                    format='%(levelname)s:%(asctime)s:%(name)s:%(message)s',
+                    datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger("nuclia loader")
 
 LANGUAGES = {'english': 'en',
