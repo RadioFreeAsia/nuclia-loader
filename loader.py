@@ -74,6 +74,11 @@ def load_all(filename):
                 # it's the error report at the end of the export - ignore it.
                 continue
 
+            # Skip unpublished content.
+            if item.get('review_state') != "published":
+                logger.info(f"skipping: review state '{item.get('review_state')}' for {item['@id']} ")
+                continue
+
             # fix the ID, so it points to a published resource, not a test or dev uri
             pattern = ".*\.rfaweb.org"
             item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
@@ -129,7 +134,7 @@ def load_one(item):
         origin={
             "url": item['@id'],
             "tags": item['subjects'],
-            "created": item['created'],
+            "created": item['effective'],
             "modified": item['modified'],
         },
         summary=item['description'],
