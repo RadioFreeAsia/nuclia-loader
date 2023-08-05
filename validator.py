@@ -28,14 +28,17 @@ def validate(filename):
         items = ijson.items(filep, 'item')
         objects = 0
         errors = 0
+        unpublished = 0
 
         for item in items:
             if '@id' in item:
                 objects += 1
+                if item.get('review_state') != "published":
+                    unpublished += 1
             else:
                 errors = len(item['unexported_paths'])
 
-    print(f"{filename}:  {objects} objects | {errors} errors")
+    print(f"{filename}:  {objects} objects | {objects-unpublished} published | {errors} errors")
 
 
 if __name__ == "__main__":
