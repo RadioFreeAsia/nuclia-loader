@@ -38,10 +38,12 @@ def validate(filename):
             else:
                 errors = len(item['unexported_paths'])
 
-    print(f"{filename}:  {objects} objects | {objects-unpublished} published | {errors} errors")
+    return (objects, unpublished, errors)
 
 
 if __name__ == "__main__":
     args = process_args()
 
-    validate(args.filename)
+    (objects, unpublished, errors) = validate(args.filename)
+
+    print(f"{args.filename}:  {objects} objects | {objects - unpublished} published | {errors} errors")

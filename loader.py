@@ -10,6 +10,8 @@ from configuration import API_KEY
 from configuration import KB
 from configuration import cloud_endpoint
 
+from validator import validate
+
 logging.basicConfig(level=logging.INFO,
                     format='%(levelname)s:%(asctime)s:%(name)s:%(message)s',
                     datefmt="%Y-%m-%d %H:%M:%S")
@@ -65,6 +67,10 @@ def process_args():
 
 
 def load_all(filename):
+
+    (objects, unpublished, errors) = validate(filename)
+    total_published = objects - unpublished
+    count = 0
     with open(filename, 'r') as filep:
 
         # stream it from json into objects one item at a time
@@ -110,6 +116,8 @@ def load_all(filename):
             except Exception as e:
                 logger.error(e, exc_info=True)
 
+            count += 1
+            logger.info(f"{count/len(total_published):.1%} complete | {count} of {total_published} ")
 
 def load_one(item):
     # The slug is your own unique id (so the Plone uid is probably a good one in your case),
