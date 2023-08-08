@@ -52,11 +52,18 @@ LANGUAGE_LABELS = {'burmese': "Burmese",
 
 
 def process_args():
-    parser = argparse.ArgumentParser(description="Load nuclia with a json file from plone export."
-                                                 "Note only 'story' types are expected",
-                                     usage="usage: loader.py <filename>")
+    parser = argparse.ArgumentParser(description="""Load nuclia with a json file from plone export.
+                                                 adding an --id argument will search the json file for a record with a
+                                                 matching "@id" and only upload that record.
+                                                 Note only 'story' types are expected""",
+                                     usage="usage: loader.py <filename> [--id=<id>]")
     parser.add_argument("filename",
-                        help="filename of json export")
+                        help="filename of json export",
+                        )
+
+    parser.add_argument("--id",
+                        help="upload only a single ID from file",
+                        )
 
     parser.add_argument("-v", "--verbose",
                         help="turn on debug")
@@ -66,7 +73,7 @@ def process_args():
     return parsed_args
 
 
-def load_all(filename):
+def load_file(filename):
 
     (objects, unpublished, errors) = validate(filename)
     total_published = objects - unpublished
@@ -87,29 +94,7 @@ def load_all(filename):
                 logger.info(f"skipping: review state '{item.get('review_state')}' for {item['@id']} ")
                 continue
 
-            # fix the ID, so it points to a published resource, not a test or dev uri
-            pattern = ".*\.rfaweb.org"
-            item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
-            pattern = "https://.*\.benarnews.org"
-            item['@id'] = re.sub(pattern, "https://www.benarnews.org", item['@id'])
-
-            # set description to None if it's blank:
-            if not item['description'] or item['description'].isspace():
-                item['description'] = None
-
-            # clean the whitespace crap out of subjects:
-            item['subjects'] = list([tag for tag in item['subjects'] if (tag and not tag.isspace())])
-
-            # language must be inferred from URL
-            parsed_url = urllib.parse.urlparse(item['@id'])
-            language = parsed_url.path.split('/')[1]
-            language_code = LANGUAGES.get(language, "en")
-
-            item['language'] = {'title': language.capitalize(), 'token': language_code}
-
-            item['language_service'] = LANGUAGE_LABELS.get(language, 'unknown')
-            if language == 'english' and 'benar' in parsed_url.netloc:
-                item['language_service'] = "English BenarNews"
+            item = preprocess(item)
 
             try:
                 load_one(item)
@@ -118,6 +103,33 @@ def load_all(filename):
 
             count += 1
             logger.info(f"{count/len(total_published):.1%} complete | {count} of {total_published} ")
+
+
+def load_id(item_id, filename):
+    """ given a specific ID from the plone export file,
+        find that ID in the json export and only upload that specific one.
+    """
+    logger.debug(f"searching for item[@id]={item_id}")
+    with open(filename, 'r') as filep:
+
+        # stream it from json into objects one item at a time
+        objects = ijson.items(filep, 'item')
+        found = False
+        for item in objects:
+            if item.get('@id') == item_id:
+                found = True
+                item = preprocess_item(item)
+
+                try:
+                    load_one(item)
+                except Exception as e:
+                    logger.error(e, exc_info=True)
+
+                break
+
+        if not found:
+            logger.warning(f"id {item_id} not found in {filename}")
+
 
 def load_one(item):
     # The slug is your own unique id (so the Plone uid is probably a good one in your case),
@@ -166,6 +178,33 @@ def load_one(item):
     #     ],
     # }
 
+def preprocess_item(item):
+    # fix the ID, so it points to a published resource, not a test or dev uri
+    pattern = ".*\.rfaweb.org"
+    item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
+    pattern = "https://.*\.benarnews.org"
+    item['@id'] = re.sub(pattern, "https://www.benarnews.org", item['@id'])
+
+    # set description to None if it's blank:
+    if not item['description'] or item['description'].isspace():
+        item['description'] = None
+
+    # clean the whitespace crap out of subjects:
+    item['subjects'] = list([tag for tag in item['subjects'] if (tag and not tag.isspace())])
+
+    # language must be inferred from URL
+    parsed_url = urllib.parse.urlparse(item['@id'])
+    language = parsed_url.path.split('/')[1]
+    language_code = LANGUAGES.get(language, "en")
+
+    item['language'] = {'title': language.capitalize(), 'token': language_code}
+
+    item['language_service'] = LANGUAGE_LABELS.get(language, 'unknown')
+    if language == 'english' and 'benar' in parsed_url.netloc:
+        item['language_service'] = "English BenarNews"
+
+    return item
+
 
 if __name__ == "__main__":
     args = process_args()
@@ -174,4 +213,9 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
 
-    load_all(args.filename)
+    if args.id is not None:
+        load_id(args.id, args.filename)
+    else:
+        load_file(args.filename)
+
+
