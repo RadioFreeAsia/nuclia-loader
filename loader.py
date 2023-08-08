@@ -94,7 +94,7 @@ def load_file(filename):
                 logger.info(f"skipping: review state '{item.get('review_state')}' for {item['@id']} ")
                 continue
 
-            item = preprocess(item)
+            item = preprocess_item(item)
 
             try:
                 load_one(item)
@@ -102,7 +102,7 @@ def load_file(filename):
                 logger.error(e, exc_info=True)
 
             count += 1
-            logger.info(f"{count/len(total_published):.1%} complete | {count} of {total_published} ")
+            logger.info(f"{count/total_published:.1%} complete | {count} of {total_published} ")
 
 
 def load_id(item_id, filename):
