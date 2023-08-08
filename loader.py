@@ -203,6 +203,12 @@ def preprocess_item(item):
     if language == 'english' and 'benar' in parsed_url.netloc:
         item['language_service'] = "English BenarNews"
 
+    # Some stories have no text!
+    if item['text'] is None:
+        item['text'] = {"data": "",
+                        "content-type": "text/html"
+                        }
+
     return item
 
 
