@@ -61,37 +61,57 @@ def process_args():
                         help="filename of json export",
                         )
 
+    parser.add_argument("--resume_at",
+                        help="resume at a specific index, skipping objects up until that point",
+                        type=int,
+                        required=False,
+                        default=0,
+                        )
+
     parser.add_argument("--id",
                         help="upload only a single ID from file",
                         )
 
+
     parser.add_argument("-v", "--verbose",
-                        help="turn on debug")
+                        help="turn on debug",
+                        action="store_true")
 
     parsed_args = parser.parse_args()
 
     return parsed_args
 
 
-def load_file(filename):
+def load_file(filename, resume_at=0):
 
+    logger.debug(f"counting objects in {filename}")
     (objects, unpublished, errors) = validate(filename)
     total_published = objects - unpublished
+    logger.debug(f"{objects} objects | {total_published} published")
     count = 0
+
     with open(filename, 'r') as filep:
 
         # stream it from json into objects one item at a time
         objects = ijson.items(filep, 'item')
-
+        logger.debug("starting upload")
         for item in objects:
 
+            logger.debug(f"processing object at {count}")
             if "unexported_paths" in item and "@id" not in item:
                 # it's the error report at the end of the export - ignore it.
                 continue
 
+
             # Skip unpublished content.
             if item.get('review_state') != "published":
                 logger.info(f"skipping: review state '{item.get('review_state')}' for {item['@id']} ")
+                continue
+
+            # Skip objects until 'resume at' is met:
+            if count < resume_at:
+                logger.info(f"{item['title']} |  skipping up to {count}/{resume_at}")
+                count += 1
                 continue
 
             item = preprocess_item(item)
@@ -222,6 +242,6 @@ if __name__ == "__main__":
     if args.id is not None:
         load_id(args.id, args.filename)
     else:
-        load_file(args.filename)
+        load_file(args.filename, args.resume_at)
 
 
