@@ -8,6 +8,7 @@ import argparse
 import logging
 import time
 import ijson
+from datetime import datetime, timedelta
 
 from nuclia import sdk
 from nucliadb_sdk.v2 import exceptions
@@ -80,7 +81,8 @@ def remove_privates(filename):
             # occasional logging:
             if processed % 50 == 0:
                 remaining_time = (total_objects-processed) * average_duration
-                logger.info(f"{processed/total_objects:.1%} ETA: {remaining_time:.2} seconds")
+                logger.info(f"{processed/total_objects:.1%} ETA: {remaining_time:.0f} seconds |" +
+                            f"{(datetime.now()+timedelta(seconds=remaining_time)).strftime('%Y-%m-%d %X')}")
 
             # figure out the estimated time to completion.
             tend = time.monotonic()
