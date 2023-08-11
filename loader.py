@@ -3,14 +3,19 @@ import argparse
 import re
 import logging
 import urllib
-
+import time
 import ijson
+from datetime import datetime, timedelta
+
 from nuclia import sdk
 from configuration import API_KEY
 from configuration import KB
 from configuration import cloud_endpoint
 
 from validator import validate
+
+from collections import deque
+from statistics import mean
 
 logging.basicConfig(level=logging.INFO,
                     format='%(levelname)s:%(asctime)s:%(name)s:%(message)s',
@@ -89,19 +94,23 @@ def load_file(filename, resume_at=0):
     total_published = objects - unpublished
     logger.debug(f"{objects} objects | {total_published} published")
     count = 0
+    average_duration = 0.0001  # a guess
+
+    last_runtimes = deque()
+    window_average = 10
 
     with open(filename, 'r') as filep:
 
         # stream it from json into objects one item at a time
         objects = ijson.items(filep, 'item')
         logger.debug("starting upload")
+        tstart = time.monotonic()
         for item in objects:
 
             logger.debug(f"processing object at {count}")
             if "unexported_paths" in item and "@id" not in item:
                 # it's the error report at the end of the export - ignore it.
                 continue
-
 
             # Skip unpublished content.
             if item.get('review_state') != "published":
@@ -122,7 +131,27 @@ def load_file(filename, resume_at=0):
                 logger.error(e, exc_info=True)
 
             count += 1
-            logger.info(f"{count/total_published:.1%} complete | {count} of {total_published} ")
+            logger.info(f"{count} of {total_published} | {count/total_published:.1%} complete")
+
+            #print running average rate:
+            if len(last_runtimes) > window_average:
+                last_runtimes.popleft()
+                rate = mean(last_runtimes)
+            else:
+                rate = 9999.9
+
+
+            # figure out the estimated time to completion.
+            remaining_time = (total_published - count) * average_duration
+            logger.info(f"rate: {rate:.4f} items/second ETA: {remaining_time:.0f} seconds |" +
+                        f"{(datetime.now()+timedelta(seconds=remaining_time)).strftime('%Y-%m-%d %X')}")
+
+            tend = time.monotonic()
+            duration = tend-tstart
+            last_runtimes.append(duration)
+
+            average_duration = average_duration + ((duration-average_duration)/count)
+            tstart = tend  # next loop iteration start time is this loop iteration end time.
 
 
 def load_id(item_id, filename):
