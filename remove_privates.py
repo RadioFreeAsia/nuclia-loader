@@ -57,7 +57,7 @@ def remove_privates(filename):
         processed = 0
         not_found = 0
 
-        tbegin = tstart = time.monotonic()
+        tstart = time.monotonic()
         average_duration = 0.0001  # a guess
         for item in objects:
             # If the item is not public...
@@ -75,17 +75,18 @@ def remove_privates(filename):
                 else:
                     deleted += 1
 
+            processed += 1
+
             # occasional logging:
             if processed % 50 == 0:
                 remaining_time = (total_objects-processed) * average_duration
                 logger.info(f"{processed/total_objects:.1%} ETA: {remaining_time:.2} seconds")
 
-            processed += 1
+            # figure out the estimated time to completion.
             tend = time.monotonic()
             duration = tend-tstart
-            new_tstart = time.monotonic()
             average_duration = average_duration + ((duration-average_duration)/processed)
-            tstart = new_tstart
+            tstart = tend  # next loop iteration start time is this loop iteration end time.
 
         logger.info(f"complete.  Deleted {deleted} objects out of {unpublished} with {not_found} not found")
 
