@@ -148,7 +148,7 @@ def load_file(filename, resume_at=0):
 
             tend = time.monotonic()
             duration = tend-tstart
-            last_runtimes.append(duration)
+            last_runtimes.append(1/duration)
 
             average_duration = average_duration + ((duration-average_duration)/count)
             tstart = tend  # next loop iteration start time is this loop iteration end time.
