@@ -69,9 +69,6 @@ def load_file(filename, resume_at=0):
         tstart = time.monotonic()
         for item in objects:
 
-            date = item['effective']
-            #get the resource, and edit it, putting in the correct creation date.
-
             logger.debug(f"processing object at {count}")
             if "unexported_paths" in item and "@id" not in item:
                 # it's the error report at the end of the export - ignore it.
