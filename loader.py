@@ -199,7 +199,7 @@ def load_one(item):
         },
         usermetadata={
             "classifications": [
-                {"labelset": "Language Service", "label": item['language_service']},
+                {"labelset": "language-service", "label": item['language_service']},
             ],
         },
         origin={
