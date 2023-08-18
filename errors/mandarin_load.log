@@ -1,0 +1,874 @@
+INFO:2023-08-11 15:58:49:nuclia loader:adding resource for https://www.rfa.org/mandarin/1120wul01-11202018031110.html, language zh-cn
+INFO:2023-08-11 15:58:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:49:nuclia loader:{"detail":"Resource slug f86caf3a-2fde-4eb6-82e1-02e2b264de54 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:49:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17ccpc-20071022.html, language zh-cn
+INFO:2023-08-11 15:58:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:49:nuclia loader:{"detail":"Resource slug c65fc816457d78dff8892a4c84c23b72 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:49:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da-20071020.html, language zh-cn
+INFO:2023-08-11 15:58:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:49:nuclia loader:{"detail":"Resource slug d80d8295cada8164ef13dbb33899fcf7 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:49:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da-20071021.html, language zh-cn
+INFO:2023-08-11 15:58:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:49:nuclia loader:{"detail":"Resource slug c1b769125cad8b95986ea19f3581889c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:49:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da-20071023.html, language zh-cn
+INFO:2023-08-11 15:58:50:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:50:nuclia loader:{"detail":"Resource slug 15b4b7ce25c0d31e9e713af74c47211b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:50:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da-20071025.html, language zh-cn
+INFO:2023-08-11 15:58:50:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:50:nuclia loader:{"detail":"Resource slug fd8fea5093da968c81a0f946b9b1844a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:50:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da-20071105.html, language zh-cn
+INFO:2023-08-11 15:58:50:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:50:nuclia loader:{"detail":"Resource slug 0b9d3728b8c47d9bba24d0250aaea7a8 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:50:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da-20071116.html, language zh-cn
+INFO:2023-08-11 15:58:50:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:50:nuclia loader:{"detail":"Resource slug dac51226d71e399e45973e449ed5f760 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:50:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da1-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:50:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:50:nuclia loader:{"detail":"Resource slug 7a45ab1be1b8e90336e2ced5c71f62da already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:50:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da1-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:51:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:51:nuclia loader:{"detail":"Resource slug 171db286d29d8e587172c9839904b2e5 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:51:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da2-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:51:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:51:nuclia loader:{"detail":"Resource slug 2d07bd98d7e7e060eff8c341802c146e already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:51:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da3-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:51:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:51:nuclia loader:{"detail":"Resource slug f4d897a195f66fdfb7f469f76ca1d33a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:51:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da4-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:51:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:51:nuclia loader:{"detail":"Resource slug 9a4a5a764c28c1bfbe63a831da157955 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:51:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da5-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:51:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:51:nuclia loader:{"detail":"Resource slug 2a303c16e36ca5c75c773ff0e0c0eda6 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:51:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/17da5-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:52:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:52:nuclia loader:{"detail":"Resource slug 616167766700972b010703f141dc03f8 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:52:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/Gao_zhisheng-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:52:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:52:nuclia loader:{"detail":"Resource slug 51bef567fd1da71774f8c1ec79358a03 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:52:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/HK-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:52:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:52:nuclia loader:{"detail":"Resource slug 1e6b62585fffc3aa9234c365e0c29b6e already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:52:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/Hu_Jintao-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:52:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:52:nuclia loader:{"detail":"Resource slug fd45dc5843bebf1385bdf53f43f9238c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:52:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/Hu_jia-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:52:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:52:nuclia loader:{"detail":"Resource slug 343e0910f86e703987b9a5b88c362a2b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:52:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/Hujia-liujianchao-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:53:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:53:nuclia loader:{"detail":"Resource slug 42fac8da9f1a0285e3c33a45832d3306 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:53:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/baixing-20071022.html, language zh-cn
+INFO:2023-08-11 15:58:53:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:53:nuclia loader:{"detail":"Resource slug e65139bd8a78dd219cf6c627911c4e82 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:53:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/baotong-20071023.html, language zh-cn
+INFO:2023-08-11 15:58:53:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:53:nuclia loader:{"detail":"Resource slug d6a5d242e2eba769c23f8b64fdedffcb already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:53:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/ccp-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:53:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:53:nuclia loader:{"detail":"Resource slug 6410ad0f3553bb3d0e5dc0c674f629e7 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:53:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/chen_pokong-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:54:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:54:nuclia loader:{"detail":"Resource slug 8d4e872f26488b0675053a50a6cd7c43 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:54:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/chen_pokong-20071024.html, language zh-cn
+INFO:2023-08-11 15:58:54:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:54:nuclia loader:{"detail":"Resource slug d0e4b9e0177c849d731e27136610a7b5 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:54:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/email.html-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:54:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:54:nuclia loader:{"detail":"Resource slug a9ac13a768778964cf72fb6e57525dce already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:54:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/fangmin-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:54:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:55:nuclia loader:{"detail":"Resource slug d7356734cb77e96e314852fa6432807f already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:55:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/fangmin-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:55:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:55:nuclia loader:{"detail":"Resource slug 663c1f80265417a298ced6e3072a49b4 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:55:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/fangmin-20071022.html, language zh-cn
+INFO:2023-08-11 15:58:55:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:55:nuclia loader:{"detail":"Resource slug 8ab66a2dc9682d7fe4ad5a1a3fdec995 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:55:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/fangmin2-20071017.html, language zh-cn
+INFO:2023-08-11 15:58:55:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:55:nuclia loader:{"detail":"Resource slug aea04cfff8b77314d31766316a5b63c0 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:55:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/fantan-20071015.html, language zh-cn
+INFO:2023-08-11 15:58:55:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:55:nuclia loader:{"detail":"Resource slug 51dcd91f44cb7e1f50c5fd646042386d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:55:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/fei-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:56:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:56:nuclia loader:{"detail":"Resource slug 6dd2a21c7cd811962f5242533e3c59c5 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:56:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/hk-20071022.html, language zh-cn
+INFO:2023-08-11 15:58:56:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:56:nuclia loader:{"detail":"Resource slug 05e5fa13b080ec5d546fc174c77b2fe7 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:56:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/internet-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:56:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:56:nuclia loader:{"detail":"Resource slug 7ae309e275198dc330c8db23f0236fdc already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:56:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/lichangchun-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:56:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:56:nuclia loader:{"detail":"Resource slug b23f7a5f592c68982445de69e53c4367 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:56:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/likeqiang-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:56:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:56:nuclia loader:{"detail":"Resource slug 1bf845678382e77c8d4f4702105ac724 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:56:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/liu_xiaozhu-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:57:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:57:nuclia loader:{"detail":"Resource slug c78530178b31d54daf8c1fc9c9be02af already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:57:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/minsheng-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:57:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:57:nuclia loader:{"detail":"Resource slug 2ce2d981e0255cdc6af0a33a8ee3bf1c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:57:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/peng-20071022.html, language zh-cn
+INFO:2023-08-11 15:58:57:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:57:nuclia loader:{"detail":"Resource slug 699702e073cddc210e62c050b3e944f2 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:57:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/politics-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:57:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:57:nuclia loader:{"detail":"Resource slug 2597f06a8b87afde9a6aa2a005b02d59 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:57:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/religion-20071022.html, language zh-cn
+INFO:2023-08-11 15:58:58:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:58:nuclia loader:{"detail":"Resource slug ab61f94e7fac1f3d0e8018ed1f4b1d6f already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:58:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/renshi-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:58:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:58:nuclia loader:{"detail":"Resource slug 598366a79ef3932918c171c903529708 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:58:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/shangfang-20071016.html, language zh-cn
+INFO:2023-08-11 15:58:58:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:58:nuclia loader:{"detail":"Resource slug a3798beeca7278cdafd7272bae177f59 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:58:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/shangfang-20071025.html, language zh-cn
+INFO:2023-08-11 15:58:58:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:58:nuclia loader:{"detail":"Resource slug 109210b75bb645ca3c4c0822e933754a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:58:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/shangfangcun-20071019.html, language zh-cn
+INFO:2023-08-11 15:58:58:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:58:nuclia loader:{"detail":"Resource slug c238d9fdc5d037c07585af2529df5179 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:58:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/tw-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:59:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:59:nuclia loader:{"detail":"Resource slug 61e836b0203b2f4d37ee281e263f4f97 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:59:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/wang-20071018.html, language zh-cn
+INFO:2023-08-11 15:58:59:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:59:nuclia loader:{"detail":"Resource slug 41f9dcf5985139c0bbad9ea7e1870e5c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:59:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/wang_dan-20071024.html, language zh-cn
+INFO:2023-08-11 15:58:59:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:59:nuclia loader:{"detail":"Resource slug 66d7358dcecc58f940134763357a5b77 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:59:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/wangdan-20071024.html, language zh-cn
+INFO:2023-08-11 15:58:59:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:58:59:nuclia loader:{"detail":"Resource slug 33a86b64e3bdb33ecdf60552a9478bfd already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:58:59:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/xi-20071016.html, language zh-cn
+INFO:2023-08-11 15:59:00:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:00:nuclia loader:{"detail":"Resource slug 43d0a3b30806195dcd45eddb9aeb7704 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:00:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/xinxi-kongzhi-20071018.html, language zh-cn
+INFO:2023-08-11 15:59:00:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:00:nuclia loader:{"detail":"Resource slug 94156b5aafcba6489b0e497f512a2de1 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:00:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/zhang_weiguo-20071022.html, language zh-cn
+INFO:2023-08-11 15:59:00:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:00:nuclia loader:{"detail":"Resource slug a196eb344440606ea5c2412f93d0577d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:00:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/zhengdi-20071017.html, language zh-cn
+INFO:2023-08-11 15:59:00:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:00:nuclia loader:{"detail":"Resource slug ece3006b91ddc87c315132e41b59b202 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:00:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/zhonggong-20071023.html, language zh-cn
+INFO:2023-08-11 15:59:00:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:00:nuclia loader:{"detail":"Resource slug 6b3ee2b7a9e32d390c2fa02d02a69edc already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:00:nuclia loader:adding resource for https://www.rfa.org/mandarin/17thCCPC/zoupai-20071018.html, language zh-cn
+INFO:2023-08-11 15:59:01:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:01:nuclia loader:{"detail":"Resource slug c48b04c6e0c6ccfdf52ce9d12bd986b8 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:01:nuclia loader:adding resource for https://www.rfa.org/mandarin/2-02112019091422.html, language zh-cn
+INFO:2023-08-11 15:59:01:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:01:nuclia loader:{"detail":"Resource slug 329d699c-ea44-4c47-8ff5-5b30174fdf49 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:01:nuclia loader:adding resource for https://www.rfa.org/mandarin/2-05072019111216.html, language zh-cn
+INFO:2023-08-11 15:59:01:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:01:nuclia loader:{"detail":"Resource slug e4617e8e-9b77-45a7-baf5-607e09ee1c5b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:01:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/64-20070813.html, language zh-cn
+INFO:2023-08-11 15:59:01:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:01:nuclia loader:{"detail":"Resource slug 71695d750922c0bb502c994be68fb9c3 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:01:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/CPJ-20080204.html, language zh-cn
+INFO:2023-08-11 15:59:01:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:01:nuclia loader:{"detail":"Resource slug fa7224bacf4268c99d97004463fef6e9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:01:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/HK-20070806.html, language zh-cn
+INFO:2023-08-11 15:59:02:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:02:nuclia loader:{"detail":"Resource slug ce5c7261b96fd3e764c0cba1a51fe84e already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:02:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/IOC-20070808.html, language zh-cn
+INFO:2023-08-11 15:59:02:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:02:nuclia loader:{"detail":"Resource slug c0b4f931216515850bec91f39dd9aa2d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:02:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/Ireland-20071019.html, language zh-cn
+INFO:2023-08-11 15:59:02:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:02:nuclia loader:{"detail":"Resource slug 99583b39b4aaab2a7f43209d16941db0 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:02:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/Li_Zhuming-20071020.html, language zh-cn
+INFO:2023-08-11 15:59:02:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:02:nuclia loader:{"detail":"Resource slug 369bba0d8b477e47bcd2273738be2a86 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:02:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/Norway-20071015.html, language zh-cn
+INFO:2023-08-11 15:59:02:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:02:nuclia loader:{"detail":"Resource slug fe2cf0082351456443f834c250fb1a03 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:02:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/afp-20070913.html, language zh-cn
+INFO:2023-08-11 15:59:03:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:03:nuclia loader:{"detail":"Resource slug fa5871fdb124067a05250694d963badd already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:03:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/ao-20070825.html, language zh-cn
+INFO:2023-08-11 15:59:03:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:03:nuclia loader:{"detail":"Resource slug 6a53c5f6fd3cee8ad453f130d13a31ce already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:03:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoti-20070807.html, language zh-cn
+INFO:2023-08-11 15:59:03:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:03:nuclia loader:{"detail":"Resource slug 6369584afffb2a26d75f9a08d6b35a9e already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:03:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20070910.html, language zh-cn
+INFO:2023-08-11 15:59:03:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:03:nuclia loader:{"detail":"Resource slug 93f4ef8f9d82b5b7217dec04ca666dc1 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:03:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20070915.html, language zh-cn
+INFO:2023-08-11 15:59:04:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:04:nuclia loader:{"detail":"Resource slug 297285743461551497b1fbb4cc7fdc85 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:04:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20071112.html, language zh-cn
+INFO:2023-08-11 15:59:04:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:04:nuclia loader:{"detail":"Resource slug fda4231155cfd52f9a5bfb019ec18ef2 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:04:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20071116.html, language zh-cn
+INFO:2023-08-11 15:59:04:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:04:nuclia loader:{"detail":"Resource slug b99a5e1380a977f124f62e413695dd52 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:04:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20071206.html, language zh-cn
+INFO:2023-08-11 15:59:04:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:04:nuclia loader:{"detail":"Resource slug cafa98cb2194ced7dc22b91f960bdedb already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:04:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20071231.html, language zh-cn
+INFO:2023-08-11 15:59:04:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:04:nuclia loader:{"detail":"Resource slug 7a86ebbba798a7eb098b395b7565a7c9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:04:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080103.html, language zh-cn
+INFO:2023-08-11 15:59:05:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:05:nuclia loader:{"detail":"Resource slug f3eea31e70215da1d58d6d8be2a151b8 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:05:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080114.html, language zh-cn
+INFO:2023-08-11 15:59:05:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:05:nuclia loader:{"detail":"Resource slug c2324097755f7859f5735097f606c188 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:05:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080123.html, language zh-cn
+INFO:2023-08-11 15:59:05:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:05:nuclia loader:{"detail":"Resource slug fb1ec95394eccf2e1ad408e22846806c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:05:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080204.html, language zh-cn
+INFO:2023-08-11 15:59:05:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:05:nuclia loader:{"detail":"Resource slug 2cb4b9c0090f468a328550710ef5446c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:05:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080212.html, language zh-cn
+INFO:2023-08-11 15:59:05:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:05:nuclia loader:{"detail":"Resource slug ea41ce68d705f823129c6521c7e50320 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:05:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080214.html, language zh-cn
+INFO:2023-08-11 15:59:06:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:06:nuclia loader:{"detail":"Resource slug a83aff3e522d6285ec13984a186526d6 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:06:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080219.html, language zh-cn
+INFO:2023-08-11 15:59:06:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:06:nuclia loader:{"detail":"Resource slug b16f6c8da0a5a403e694bea8943961b0 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:06:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080220.html, language zh-cn
+INFO:2023-08-11 15:59:06:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:06:nuclia loader:{"detail":"Resource slug a1e9a8b6a155e5a2904402cd56181ec3 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:06:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080227.html, language zh-cn
+INFO:2023-08-11 15:59:06:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:06:nuclia loader:{"detail":"Resource slug 8255bf6ce77f8b17c68f89fd2b2084be already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:06:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080228.html, language zh-cn
+INFO:2023-08-11 15:59:07:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:07:nuclia loader:{"detail":"Resource slug b36395818cc197e98757cea390f3ecd9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:07:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080307.html, language zh-cn
+INFO:2023-08-11 15:59:07:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:07:nuclia loader:{"detail":"Resource slug 16bbc105f899da9a3e71ac4f4c1cd21a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:07:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080313.html, language zh-cn
+INFO:2023-08-11 15:59:07:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:07:nuclia loader:{"detail":"Resource slug 6089310deca51aced3889871bd1f4461 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:07:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080402.html, language zh-cn
+INFO:2023-08-11 15:59:07:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:07:nuclia loader:{"detail":"Resource slug 364fe008698500cabde24ecf1861b022 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:07:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun-20080404.html, language zh-cn
+INFO:2023-08-11 15:59:07:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:07:nuclia loader:{"detail":"Resource slug 6c349bc4f98540ef0d88adbbd590d812 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:07:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun1-20080326.html, language zh-cn
+INFO:2023-08-11 15:59:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:08:nuclia loader:{"detail":"Resource slug 6bb6ce670873604543f21437b13321cf already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:08:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun2-20080326.html, language zh-cn
+INFO:2023-08-11 15:59:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:08:nuclia loader:{"detail":"Resource slug 3227f58125c8fb3110a0a7dadc9d4a67 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:08:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun2-20080402.html, language zh-cn
+INFO:2023-08-11 15:59:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:08:nuclia loader:{"detail":"Resource slug f24e494a6ba128abc3b5e4107e97f95c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:08:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun3-20080326.html, language zh-cn
+INFO:2023-08-11 15:59:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:08:nuclia loader:{"detail":"Resource slug 1191e1908a41b723e7604d50b727cb86 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:08:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun3-20080402.html, language zh-cn
+INFO:2023-08-11 15:59:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:08:nuclia loader:{"detail":"Resource slug 23dd5dce3add6f7f8ed0ee88635b3199 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:08:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyun4-20080402.html, language zh-cn
+INFO:2023-08-11 15:59:09:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:09:nuclia loader:{"detail":"Resource slug 2f75d8cd03cb3f75e54b3b4de2b28006 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:09:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/aoyunrenquan-20070910.html, language zh-cn
+INFO:2023-08-11 15:59:09:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:09:nuclia loader:{"detail":"Resource slug f2321fa7462bf29e543518e336d6d652 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:09:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/australia-20070809.html, language zh-cn
+INFO:2023-08-11 15:59:09:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:09:nuclia loader:{"detail":"Resource slug 7d4ece8c84cb529c94f8040f416c553f already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:09:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/auyun_changpao-20070806.html, language zh-cn
+INFO:2023-08-11 15:59:09:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:09:nuclia loader:{"detail":"Resource slug 47caa3001675eaa952a477ce05663c56 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:09:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/beijing-20070803.html, language zh-cn
+INFO:2023-08-11 15:59:09:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:09:nuclia loader:{"detail":"Resource slug cf062d9245f3872caf48b55338713dbf already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:09:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/bj-20070814.html, language zh-cn
+INFO:2023-08-11 15:59:10:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:10:nuclia loader:{"detail":"Resource slug 8322a55c05e4968f71807d1709880468 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:10:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/chen-20080116.html, language zh-cn
+INFO:2023-08-11 15:59:10:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:10:nuclia loader:{"detail":"Resource slug f30837321b0905d4b20144888d1b2624 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:10:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/chen_pokong-20080220.html, language zh-cn
+INFO:2023-08-11 15:59:10:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:10:nuclia loader:{"detail":"Resource slug 95dd3bc7deb2366c5b19a4792d71d3f6 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:10:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/chenkai-20070925.html, language zh-cn
+INFO:2023-08-11 15:59:10:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:10:nuclia loader:{"detail":"Resource slug addad936c50aac8c58d333d5023c82ba already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:10:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/darfur-20071126.html, language zh-cn
+INFO:2023-08-11 15:59:10:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:10:nuclia loader:{"detail":"Resource slug 0aa797dc3264a31add00c49e9827ab30 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:10:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/fangmin-20071220.html, language zh-cn
+INFO:2023-08-11 15:59:11:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:11:nuclia loader:{"detail":"Resource slug 29a22628a6243a3f7b228e82715b8ac7 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:11:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/gao-20071101.html, language zh-cn
+INFO:2023-08-11 15:59:11:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:11:nuclia loader:{"detail":"Resource slug b7a59d8fd2e2276e6ea79eeb9947e22d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:11:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/gongkaixin-20070807.html, language zh-cn
+INFO:2023-08-11 15:59:11:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:11:nuclia loader:{"detail":"Resource slug f66056a950db85746b52f20b662a6d51 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:11:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/guofeixiong-20070814.html, language zh-cn
+INFO:2023-08-11 15:59:11:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:11:nuclia loader:{"detail":"Resource slug d599ff2c50a9b8773086fbe3d09ef260 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:11:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/hk-20080131.html, language zh-cn
+INFO:2023-08-11 15:59:11:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:11:nuclia loader:{"detail":"Resource slug 6c70cbee21702c7a099c9f8bdddc8506 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:11:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/hr-20070807.html, language zh-cn
+INFO:2023-08-11 15:59:12:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:12:nuclia loader:{"detail":"Resource slug b0d5f5954e49ce1a842bc72f9fcc01ca already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:12:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/hu_ping2-20080103.html, language zh-cn
+INFO:2023-08-11 15:59:12:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:12:nuclia loader:{"detail":"Resource slug b10e02a21acb9552c2a0aaee27e0f0c9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:12:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/huache-20080103.html, language zh-cn
+INFO:2023-08-11 15:59:12:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:12:nuclia loader:{"detail":"Resource slug e48b4d8601b38846d414580c5f6f129d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:12:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/hujia2-20080404.html, language zh-cn
+INFO:2023-08-11 15:59:12:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:12:nuclia loader:{"detail":"Resource slug 4f1d0bc74e0479355d2a878f0b49770c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:12:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/humanrights-20080118.html, language zh-cn
+INFO:2023-08-11 15:59:13:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:13:nuclia loader:{"detail":"Resource slug 4ce1985691483b08f59f42d20d5bfd0b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:13:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/ji-20080117.html, language zh-cn
+INFO:2023-08-11 15:59:13:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:13:nuclia loader:{"detail":"Resource slug 9caf368232c94e10de70dd7cb8f452be already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:13:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/jianada-20070816.html, language zh-cn
+INFO:2023-08-11 15:59:13:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:13:nuclia loader:{"detail":"Resource slug d9f848078f94e004fc9d08b614798e47 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:13:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/jizhe-20070806.html, language zh-cn
+INFO:2023-08-11 15:59:13:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:13:nuclia loader:{"detail":"Resource slug 896c63793dad95d7f28d38d5fd093146 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:13:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/jizhe-20070919.html, language zh-cn
+INFO:2023-08-11 15:59:13:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:13:nuclia loader:{"detail":"Resource slug 7e7b812bc3e67292b60cebbb1bc1d6b7 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:13:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/jizhe-20071114.html, language zh-cn
+INFO:2023-08-11 15:59:14:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:14:nuclia loader:{"detail":"Resource slug 5f20ef9f9517ce9ba4ebbe9611a4e7e7 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:14:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/jizhe1-20071114.html, language zh-cn
+INFO:2023-08-11 15:59:14:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:14:nuclia loader:{"detail":"Resource slug 34c8aba1403341b1329d036f7adc4654 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:14:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/lee-20071029.html, language zh-cn
+INFO:2023-08-11 15:59:14:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:14:nuclia loader:{"detail":"Resource slug 4805aff224a324e0dd4a8d9e59e1dbf3 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:14:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/lin_baohua-20080220.html, language zh-cn
+INFO:2023-08-11 15:59:14:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:14:nuclia loader:{"detail":"Resource slug 284dbc7c33bf7a3344c98d1ddf291550 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:14:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/olympics-05012008104309.html, language zh-cn
+INFO:2023-08-11 15:59:14:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:14:nuclia loader:{"detail":"Resource slug d0f446edc62842d9f54cfdb3ae4c9088 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:14:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/olympics-20080324.html, language zh-cn
+INFO:2023-08-11 15:59:15:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:15:nuclia loader:{"detail":"Resource slug 8723e9796dca39156bb54a0020d2fda0 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:15:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/parade-20071015.html, language zh-cn
+INFO:2023-08-11 15:59:15:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:15:nuclia loader:{"detail":"Resource slug 813d4f05505951c932764c573f67994a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:15:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/promise-20070914.html, language zh-cn
+INFO:2023-08-11 15:59:15:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:15:nuclia loader:{"detail":"Resource slug 93bd1291b125c578e123f02b49c863ad already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:15:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/protest-20071009.html, language zh-cn
+INFO:2023-08-11 15:59:15:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:15:nuclia loader:{"detail":"Resource slug ea4e75006aa44964fcc4751cb74ff628 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:15:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/qiangchai-20080212.html, language zh-cn
+INFO:2023-08-11 15:59:15:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:15:nuclia loader:{"detail":"Resource slug 4d81fee5faf41d38b34d2cebc9ebc46c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:15:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/qingyuan-20070808.html, language zh-cn
+INFO:2023-08-11 15:59:16:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:16:nuclia loader:{"detail":"Resource slug e61ef8a6c118f327876eba20d210d9f5 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:16:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/qoyun-20080315.html, language zh-cn
+INFO:2023-08-11 15:59:16:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:16:nuclia loader:{"detail":"Resource slug d29e9bad6403f003a28c69964d7a322c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:16:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquan-20071106.html, language zh-cn
+INFO:2023-08-11 15:59:16:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:16:nuclia loader:{"detail":"Resource slug 9bc9c81345b7c562ade5ba4ce2fae48d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:16:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquan-20080212.html, language zh-cn
+INFO:2023-08-11 15:59:16:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:16:nuclia loader:{"detail":"Resource slug 6e42f31f38a385adec7a0d246ae3f7b9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:16:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquan-20080327.html, language zh-cn
+INFO:2023-08-11 15:59:16:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:16:nuclia loader:{"detail":"Resource slug e816e0ee19807502e0c644b3fe2c2135 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:16:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquan-20080404.html, language zh-cn
+INFO:2023-08-11 15:59:17:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:17:nuclia loader:{"detail":"Resource slug d3f85108aa1fff143f6de7e0806776a6 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:17:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquan_torch-20070810.html, language zh-cn
+INFO:2023-08-11 15:59:17:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:17:nuclia loader:{"detail":"Resource slug 2b812f0d0994b3bf748ae5a3e11d2490 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:17:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquanjiang-20070829.html, language zh-cn
+INFO:2023-08-11 15:59:17:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:17:nuclia loader:{"detail":"Resource slug c8c6e98b4bf627d5cb58a86291fb1698 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:17:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/renquanshenghuo-20070917.html, language zh-cn
+INFO:2023-08-11 15:59:17:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:17:nuclia loader:{"detail":"Resource slug cf9387e388c54e9488a75332ea6de0b9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:17:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/rsf-20070807.html, language zh-cn
+INFO:2023-08-11 15:59:17:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:17:nuclia loader:{"detail":"Resource slug 1e83a738b5711f98438f9e3763574d9d already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:17:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/rsf-20080207.html, language zh-cn
+INFO:2023-08-11 15:59:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:18:nuclia loader:{"detail":"Resource slug 7d13351ba6615b11bd651a95ede25c72 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/rsf-20080401.html, language zh-cn
+INFO:2023-08-11 15:59:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:18:nuclia loader:{"detail":"Resource slug 6b8f4b7514ab0752b392143a25645ea2 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shangfangcun-20070808.html, language zh-cn
+INFO:2023-08-11 15:59:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:18:nuclia loader:{"detail":"Resource slug 51675a6b4c0016c72000ce8380848c7c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shenghuo-20070824.html, language zh-cn
+INFO:2023-08-11 15:59:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:18:nuclia loader:{"detail":"Resource slug c0531484be2d789c5d8197a915ed0197 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shenghuo-20070912.html, language zh-cn
+INFO:2023-08-11 15:59:19:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:19:nuclia loader:{"detail":"Resource slug f44e8d16547e0602409355d451102ff2 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:19:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shenghuo-20070913.html, language zh-cn
+INFO:2023-08-11 15:59:19:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:19:nuclia loader:{"detail":"Resource slug 22820cb88baa7e40920344046fc387a5 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:19:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shenghuo-20070927.html, language zh-cn
+INFO:2023-08-11 15:59:19:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:19:nuclia loader:{"detail":"Resource slug 173b224ae177c8e8ea97c1066aea3967 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:19:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shenghuo-20071025.html, language zh-cn
+INFO:2023-08-11 15:59:19:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:19:nuclia loader:{"detail":"Resource slug 3da04104e197968be7c74b576c88490a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:19:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/shenghuo-20080401.html, language zh-cn
+INFO:2023-08-11 15:59:19:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:19:nuclia loader:{"detail":"Resource slug 43d78ef0f277af6811a889fdd20a6dee already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:19:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/steven-20080213.html, language zh-cn
+INFO:2023-08-11 15:59:20:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:20:nuclia loader:{"detail":"Resource slug 765e7ff539896368ba27d62a9e6847ea already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:20:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/teshe-20071214.html, language zh-cn
+INFO:2023-08-11 15:59:20:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:20:nuclia loader:{"detail":"Resource slug 4c68a47983b866ef617dea9b250c8190 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:20:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/tibet-20080404.html, language zh-cn
+INFO:2023-08-11 15:59:20:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:20:nuclia loader:{"detail":"Resource slug 14b110788c39ea006ac9350adbdf63ff already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:20:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/tibet_torch-05022008093612.html, language zh-cn
+INFO:2023-08-11 15:59:20:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:20:nuclia loader:{"detail":"Resource slug 52e1bd12d3b20a777ff3bc8d5c886b4c already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:20:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/torch-20070813.html, language zh-cn
+INFO:2023-08-11 15:59:20:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:20:nuclia loader:{"detail":"Resource slug 3b3c9f178e51e2709b80ca90843421f5 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:20:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/torch-20070817.html, language zh-cn
+INFO:2023-08-11 15:59:21:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:21:nuclia loader:{"detail":"Resource slug a61f13afc65d646681ac81ca8bff2a32 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:21:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/torch-20071002.html, language zh-cn
+INFO:2023-08-11 15:59:21:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:21:nuclia loader:{"detail":"Resource slug 2d454cff4c8b4034f647a321a99c196b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:21:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/torch-20071010.html, language zh-cn
+INFO:2023-08-11 15:59:21:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:21:nuclia loader:{"detail":"Resource slug 05aded8f257114082b9bdc84abb2eb14 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:21:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/torch-20071026.html, language zh-cn
+INFO:2023-08-11 15:59:21:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:21:nuclia loader:{"detail":"Resource slug 4ba7d4cddf999d9dad5718cabfabd4ce already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:21:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/torch_rally-05052008104338.html, language zh-cn
+INFO:2023-08-11 15:59:22:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:22:nuclia loader:{"detail":"Resource slug c468f1ea2b1005cb171c5aa1529e240b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:22:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/tw-20080221.html, language zh-cn
+INFO:2023-08-11 15:59:22:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:22:nuclia loader:{"detail":"Resource slug ffb1501d3f5b56ee986e26c446a6a5ee already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:22:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/waiji-20071126.html, language zh-cn
+INFO:2023-08-11 15:59:22:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:22:nuclia loader:{"detail":"Resource slug 77a0f84bf8ad1d04370f9ac82108499a already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:22:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/wang-05012008172408.html, language zh-cn
+INFO:2023-08-11 15:59:22:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:22:nuclia loader:{"detail":"Resource slug b292eca34f5d229fd8361fc931252205 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:22:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/wang_dan-20080220.html, language zh-cn
+INFO:2023-08-11 15:59:22:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:22:nuclia loader:{"detail":"Resource slug 855aa74942af6048ce080ecc71fcdfb6 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:22:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/wei_jingsheng-20080110.html, language zh-cn
+INFO:2023-08-11 15:59:23:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:23:nuclia loader:{"detail":"Resource slug 718ecd301eaba0a58606640d23a727a9 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:23:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/yang-20080214.html, language zh-cn
+INFO:2023-08-11 15:59:23:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:23:nuclia loader:{"detail":"Resource slug 5f661dbe4dbeeba9a76de58bc97bd731 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:23:nuclia loader:adding resource for https://www.rfa.org/mandarin/2008-Auyun/yangchunlin-20070829.html, language zh-cn
+INFO:2023-08-11 15:59:23:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:23:nuclia loader:{"detail":"Resource slug 8e1cd39064d9900a7f2d954a62b672d3 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 15:59:53:nuclia loader:adding resource for https://www.rfa.org/mandarin/Xinwen/0-01142021143304.html, language zh-cn
+INFO:2023-08-11 15:59:53:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 15:59:53:nuclia loader:{"detail":"Resource slug 55f8fe3e33874d238109229c63c6261b already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 16:00:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/Xinwen/1-01012021103930.html, language zh-cn
+INFO:2023-08-11 16:00:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 16:00:18:nuclia loader:{"detail":"Resource slug 0167e68e4de84fbd98053eea132e6bba already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 16:00:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/Xinwen/1-01012022105220.html, language zh-cn
+INFO:2023-08-11 16:00:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 16:00:18:nuclia loader:{"detail":"Resource slug e1d48939e22142a2aa43e7cf2b362329 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 16:00:18:nuclia loader:adding resource for https://www.rfa.org/mandarin/Xinwen/1-01012023110200.html, language zh-cn
+INFO:2023-08-11 16:00:18:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-11 16:00:18:nuclia loader:{"detail":"Resource slug 9e9911e0d99a4ef1b2bfdebf82d28c36 already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-11 19:41:01:nuclia loader:adding resource for https://www.rfa.org/mandarin/Xinwen/3-02012018110351.html, language zh-cn
+INFO:2023-08-11 19:41:01:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-11 19:41:01:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-12 03:12:45:nuclia loader:rate: 1.3042 items/second ETA: 123906 seconds |2023-08-13 13:37:51
+INFO:2023-08-12 03:12:45:nuclia loader:adding resource for https://www.rfa.org/mandarin/Xinwen/afuhanshiqiu-02132014083028.html, language zh-cn
+ERROR:2023-08-12 03:13:45:nuclia loader:timed out
+Traceback (most recent call last):
+--
+INFO:2023-08-12 12:23:12:nuclia loader:adding resource for https://www.rfa.org/mandarin/pinglun/shidong/sd-01242011125500.html, language zh-cn
+INFO:2023-08-12 12:23:13:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-12 12:23:13:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-13 03:00:55:nuclia loader:adding resource for https://www.rfa.org/mandarin/yataibaodao/li_xiaolong-20071219.html, language zh-cn
+INFO:2023-08-13 03:00:55:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-13 03:00:55:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-13 03:52:30:nuclia loader:adding resource for https://www.rfa.org/mandarin/yataibaodao/meiti/ql1-03022020062805.html, language zh-cn
+INFO:2023-08-13 03:52:30:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-13 03:52:30:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-13 07:41:50:nuclia loader:adding resource for https://www.rfa.org/mandarin/yataibaodao/riben-20061026.html, language zh-cn
+INFO:2023-08-13 07:41:50:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-13 07:41:50:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-13 09:44:31:nuclia loader:adding resource for https://www.rfa.org/mandarin/yataibaodao/sy2-02082012094758.html, language zh-cn
+INFO:2023-08-13 09:44:32:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-13 09:44:32:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-13 12:31:37:nuclia loader:adding resource for https://www.rfa.org/mandarin/yataibaodao/zhengzhi/gf1-08302018092102.html, language zh-cn
+INFO:2023-08-13 12:31:37:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-13 12:31:37:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-13 13:24:28:nuclia loader:adding resource for https://www.rfa.org/mandarin/ytbdzhuantixilie/diaocha-baodao/dcbd-03212023131202.html, language zh-cn
+INFO:2023-08-13 13:24:28:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-13 13:24:28:nuclia loader:{"detail":"Resource slug 64f5460a8c854afda6a555254d74ca0a already exists"}
+Traceback (most recent call last):

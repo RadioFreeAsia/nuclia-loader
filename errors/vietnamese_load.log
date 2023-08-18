@@ -1,0 +1,64 @@
+INFO:2023-08-16 12:28:48:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:48:nuclia loader:{"detail":"Resource slug f2ffa9bcbd6d82ddcf26e6887d76ada5 already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 12:28:48:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:48:nuclia loader:{"detail":"Resource slug c69f360da52f792ce1397864c0969463 already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 12:28:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:49:nuclia loader:{"detail":"Resource slug 77b8003ab0b491013cbc4840ea6c4b63 already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 12:28:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:49:nuclia loader:{"detail":"Resource slug 009d7cc305dbc0e899d2bde6302039ae already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 12:28:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:49:nuclia loader:{"detail":"Resource slug 462d099dfdc01a5da09f45edb4815ec8 already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 12:28:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:49:nuclia loader:{"detail":"Resource slug b2b910bee3871c5109d4416e333e3632 already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 12:28:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-16 12:28:49:nuclia loader:{"detail":"Resource slug 2c3955167dc48f027e09712f35cfda55 already exists"}
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-16 13:42:16:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 503 Service Unavailable"
+ERROR:2023-08-16 13:42:16:nuclia loader:Unknown error connecting to API: 503: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+--
+INFO:2023-08-16 21:06:30:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-16 21:06:30:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-17 06:06:04:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-17 06:06:04:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+  File "/home/mcfaddenm/repos/nuclia-loader/loader.py", line 129, in load_file
+--
+INFO:2023-08-17 11:13:48:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 500 Internal Server Error"
+ERROR:2023-08-17 11:13:48:nuclia loader:Unknown error connecting to API: 500: Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+--
+INFO:2023-08-17 11:13:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 500 Internal Server Error"
+ERROR:2023-08-17 11:13:49:nuclia loader:Unknown error connecting to API: 500: Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+--
+INFO:2023-08-17 11:13:49:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 500 Internal Server Error"
+ERROR:2023-08-17 11:13:49:nuclia loader:Unknown error connecting to API: 500: Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
