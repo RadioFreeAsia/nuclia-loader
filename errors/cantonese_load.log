@@ -1,0 +1,39 @@
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/2016-us-election/us-election-forum-11072016095058.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/2016-us-election/us-election-forum-11072016095058.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 201 Created"
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/commentaries/hsj/hushaojiang_com-11082013093519.html, language zh-yue
+ERROR:nuclia loader:timed out
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/news/australia-reporter-09102016100914.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/news/china_-20070711.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/news/china_pen-07252011100858.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/news/china_spy-11082011094855.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/cantonese/news/incinerator-12212015074111.html, language zh-yue
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:nuclia loader:Auth error 403: 
+Traceback (most recent call last):

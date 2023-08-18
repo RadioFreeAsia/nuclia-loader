@@ -1,0 +1,39 @@
+INFO:2023-08-18 11:09:35:nuclia date editor:editing resource 1e042e26-7a51-4458-b976-3b6f4a41f97c
+INFO:2023-08-18 11:09:35:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/1e042e26-7a51-4458-b976-3b6f4a41f97c "HTTP/1.1 404 Not Found"
+ERROR:2023-08-18 11:09:35:nuclia date editor:Resource not found at url https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/1e042e26-7a51-4458-b976-3b6f4a41f97c: {"detail":"Resource does not exist"}
+Traceback (most recent call last):
+--
+INFO:2023-08-18 11:22:08:nuclia date editor:editing resource 979b513c1c8c4e419e953a2fbbd3e408
+INFO:2023-08-18 11:22:09:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/979b513c1c8c4e419e953a2fbbd3e408 "HTTP/1.1 200 OK"
+ERROR:2023-08-18 11:23:09:nuclia date editor:The read operation timed out
+Traceback (most recent call last):
+--
+INFO:2023-08-18 13:16:14:nuclia date editor:editing resource 6dc9371803e65f17a0319e4fe1db312e
+INFO:2023-08-18 13:16:14:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/6dc9371803e65f17a0319e4fe1db312e "HTTP/1.1 200 OK"
+ERROR:2023-08-18 13:17:14:nuclia date editor:The read operation timed out
+Traceback (most recent call last):
+--
+INFO:2023-08-18 13:18:08:nuclia date editor:rate: 1.0843 items/second ETA: 73710 seconds |2023-08-19 09:46:38
+INFO:2023-08-18 13:18:08:nuclia date editor:editing resource b33ef0f3-8502-4c25-ba8b-3563d99c947e
+ERROR:2023-08-18 13:19:08:nuclia date editor:timed out
+Traceback (most recent call last):
+--
+INFO:2023-08-18 13:19:11:nuclia date editor:rate: 0.9308 items/second ETA: 74203 seconds |2023-08-19 09:55:54
+INFO:2023-08-18 13:19:11:nuclia date editor:editing resource 8646f6ee-354c-4528-8038-2c40ead96aa2
+ERROR:2023-08-18 13:20:11:nuclia date editor:timed out
+Traceback (most recent call last):
+--
+INFO:2023-08-18 13:20:24:nuclia date editor:rate: 1.1191 items/second ETA: 74689 seconds |2023-08-19 10:05:14
+INFO:2023-08-18 13:20:24:nuclia date editor:editing resource a487594a-bb8c-40e6-a7a2-bbc493db9d04
+ERROR:2023-08-18 13:21:25:nuclia date editor:timed out
+Traceback (most recent call last):
+--
+INFO:2023-08-18 13:21:25:nuclia date editor:rate: 1.1242 items/second ETA: 74689 seconds |2023-08-19 10:06:13
+INFO:2023-08-18 13:21:25:nuclia date editor:editing resource c77964f2ab094e87b24e75939bbf8e81
+ERROR:2023-08-18 13:21:55:nuclia date editor:[Errno -2] Name or service not known
+Traceback (most recent call last):
+--
+INFO:2023-08-18 13:21:55:nuclia date editor:rate: 1.0199 items/second ETA: 75178 seconds |2023-08-19 10:14:52
+INFO:2023-08-18 13:21:55:nuclia date editor:editing resource 4d435dbb-37b5-4c3b-a2e2-2ef0c5510d1b
+ERROR:2023-08-18 13:22:25:nuclia date editor:[Errno -2] Name or service not known
+Traceback (most recent call last):

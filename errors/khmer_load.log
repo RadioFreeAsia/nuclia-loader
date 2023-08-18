@@ -1,0 +1,74 @@
+INFO:2023-08-08 12:15:24:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/10-december-12272013041856.html, language km
+INFO:2023-08-08 12:15:24:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:24:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:24:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/14_february-02102012050149.html, language km
+INFO:2023-08-08 12:15:25:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:25:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:25:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/Poem-06082012032553.html, language km
+INFO:2023-08-08 12:15:25:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:25:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:25:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/Poem-06082012040315.html, language km
+INFO:2023-08-08 12:15:25:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:25:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:25:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/Words_of_Dad-10102011060724.html, language km
+INFO:2023-08-08 12:15:25:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:25:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:25:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/Wrestling-famous-Khmer-12272013042854.html, language km
+INFO:2023-08-08 12:15:26:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:26:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:26:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/always-remember-01122013040111.html, language km
+INFO:2023-08-08 12:15:26:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:26:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:26:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/angkor-flower-03132015065321.html, language km
+INFO:2023-08-08 12:15:26:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:26:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:26:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/battambang-01262012053811.html, language km
+INFO:2023-08-08 12:15:26:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:26:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 12:15:26:nuclia loader:adding resource for https://www.rfa.org/khmer/178017c6178e17b6179617d21799/book_is_friend-11072012053705.html, language km
+INFO:2023-08-08 12:15:26:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:2023-08-08 12:15:26:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:2023-08-08 15:21:48:nuclia loader:adding resource for https://www.rfa.org/khmer/indepth/high_oil_price_affects_cam-05212012061513.html, language km
+INFO:2023-08-08 15:22:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 500 Internal Server Error"
+ERROR:2023-08-08 15:22:08:nuclia loader:Unknown error connecting to API: 500: Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1155, in _create_direct_connection
+--
+INFO:2023-08-08 15:22:52:nuclia loader:adding resource for https://www.rfa.org/khmer/indepth/hornamhong-2attend-meeting-in-italy-11152009030431.html, language km
+INFO:2023-08-08 15:23:02:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 500 Internal Server Error"
+ERROR:2023-08-08 15:23:02:nuclia loader:Unknown error connecting to API: 500: Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1155, in _create_direct_connection
+--
+INFO:2023-08-08 16:46:35:nuclia loader:adding resource for https://www.rfa.org/khmer/indepth/poultry_destroyed_inoutbreak_area-20060331.html, language km
+INFO:2023-08-08 16:46:35:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-08 16:46:35:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:2023-08-08 21:11:53:nuclia loader:51.4% complete | 37837 of 73608 
+INFO:2023-08-08 21:11:53:nuclia loader:adding resource for https://www.rfa.org/khmer/news/health/h042021mn-04212021212300.html, language km
+ERROR:2023-08-08 21:11:53:nuclia loader:'NoneType' object is not subscriptable
+Traceback (most recent call last):
+--
+INFO:2023-08-09 04:03:08:nuclia loader:adding resource for https://www.rfa.org/khmer/news/social-economy/farmer-in-Stungtreng-warned-stop-farming-09262016043322.html, language km
+INFO:2023-08-09 04:03:08:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:2023-08-09 04:03:08:nuclia loader:Auth error 403: 
+Traceback (most recent call last):

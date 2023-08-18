@@ -1,0 +1,29 @@
+INFO:2023-08-15 11:51:36:nuclia loader:editing resource e47e92fa0add7bc335b3528388ec89b0
+INFO:2023-08-15 11:51:36:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/e47e92fa0add7bc335b3528388ec89b0 "HTTP/1.1 404 Not Found"
+ERROR:2023-08-15 11:51:36:nuclia loader:Resource not found at url https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/e47e92fa0add7bc335b3528388ec89b0: {"detail":"Resource does not exist"}
+Traceback (most recent call last):
+--
+INFO:2023-08-15 16:38:47:nuclia date editor:editing resource 6defb49f-af12-4685-9db9-6ddd9f64a097
+INFO:2023-08-15 16:38:47:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/6defb49f-af12-4685-9db9-6ddd9f64a097 "HTTP/1.1 503 Service Unavailable"
+ERROR:2023-08-15 16:38:47:nuclia date editor:Unknown error connecting to API: 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination
+Traceback (most recent call last):
+--
+INFO:2023-08-15 17:30:18:nuclia date editor:editing resource 8eb9ce177bf24b65a341ef42ccf38585
+INFO:2023-08-15 17:30:18:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/8eb9ce177bf24b65a341ef42ccf38585 "HTTP/1.1 503 Service Unavailable"
+ERROR:2023-08-15 17:30:18:nuclia date editor:Unknown error connecting to API: 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination
+Traceback (most recent call last):
+--
+INFO:2023-08-15 20:48:41:nuclia date editor:editing resource b55a59162091441fa11dde4dd2b97290
+INFO:2023-08-15 20:48:41:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/b55a59162091441fa11dde4dd2b97290 "HTTP/1.1 404 Not Found"
+ERROR:2023-08-15 20:48:41:nuclia date editor:Resource not found at url https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/b55a59162091441fa11dde4dd2b97290: {"detail":"Resource does not exist"}
+Traceback (most recent call last):
+--
+INFO:2023-08-16 02:19:53:nuclia date editor:editing resource 54397017-0517-4b0b-9d5a-dd07a5cc0499
+INFO:2023-08-16 02:19:53:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/54397017-0517-4b0b-9d5a-dd07a5cc0499 "HTTP/1.1 503 Service Unavailable"
+ERROR:2023-08-16 02:19:53:nuclia date editor:Unknown error connecting to API: 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination
+Traceback (most recent call last):
+--
+INFO:2023-08-16 03:12:23:nuclia date editor:editing resource e564e7c6496743c7b00105ded09da0f3
+INFO:2023-08-16 03:12:23:httpx:HTTP Request: GET https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/e564e7c6496743c7b00105ded09da0f3 "HTTP/1.1 404 Not Found"
+ERROR:2023-08-16 03:12:23:nuclia date editor:Resource not found at url https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/slug/e564e7c6496743c7b00105ded09da0f3: {"detail":"Resource does not exist"}
+Traceback (most recent call last):

@@ -1,0 +1,179 @@
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/27anniversary-redbridge-day-03162015083904.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/NLD-rejects-criticism-07052020064259.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/NLD-rejects-criticism-07052020082858.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/RFA-Burmese-Slideshow-Template-05292008134441.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/abfsu-fund-raising-for-irrawaddy-flood-08262012100026.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/beauty-03162023043905.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/codeofethics-09242021112859.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/contact-04092008164749.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/contact-10172008132719.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/contact.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/editorial/aa-covid-vaccinated-02012022060555.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/editorial/copy_of_aa-covid-vaccinated-02012022060555.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/editorial/copy_of_south-okkala-lin-clinic-01312022065658.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/editorial/copy_of_ygn-protesters-court-03302023012642.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/editorial/south-okkala-lin-clinic-01312022065658.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/editorial/ygn-protesters-court-03302023012642.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/frequencies.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/internet_usage_agreement-03072008163400.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/job-announcement-editor-07122018111325.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/listen-by-phone-09102013052055.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/mission_statement_burmese-02272008153937.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/podcasts-04022015035747.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/privacy_policy_burmese-02272008161827.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/rfa-app-11252014022852.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/rfa-broadcast-05192019223425.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/rfa-burmese-house-style.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/rfa-mobile-tablet-app-12212013014051.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/terms-of-use.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/about/test-03312023114356.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 409 Conflict"
+ERROR:nuclia loader:{"detail":"Resource slug already exists"}
+Traceback (most recent call last):
+--
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 201 Created"
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/multimedia/Hardship-of-low-income-families-during-pandemic-09182020112918.html, language my
+ERROR:nuclia loader:The read operation timed out
+Traceback (most recent call last):
+--
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 201 Created"
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/news/inle-pdf-arrested-04092023052735.html, language my
+ERROR:nuclia loader:'NoneType' object is not subscriptable
+Traceback (most recent call last):
+--
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/news/military-heavy-weapon-hit-villagers-one-dead-one-serious-wound-04292021091650.html, language my
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 403 Forbidden"
+ERROR:nuclia loader:Auth error 403: 
+Traceback (most recent call last):
+--
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 201 Created"
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/news/tt-01232022065914.html, language my
+ERROR:nuclia loader:'NoneType' object is not subscriptable
+Traceback (most recent call last):
+--
+TypeError: 'NoneType' object is not subscriptable
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/news/tt-01232022070043.html, language my
+ERROR:nuclia loader:'NoneType' object is not subscriptable
+Traceback (most recent call last):
+--
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 201 Created"
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/program_2/kayah-refugees-07262023035803.html, language my
+ERROR:nuclia loader:'NoneType' object is not subscriptable
+Traceback (most recent call last):
+--
+INFO:httpx:HTTP Request: POST https://europe-1.nuclia.cloud/api/v1/kb/1194b6c4-fc68-4dcf-b969-49b96380bfe9/resources "HTTP/1.1 201 Created"
+INFO:nuclia loader:adding resource for https://www.rfa.org/burmese/special/cartoons/aung-san-suu-kyi-under-lock-and-key-09072022200709.html, language my
+ERROR:nuclia loader:'NoneType' object is not subscriptable
+Traceback (most recent call last):
