@@ -157,7 +157,7 @@ def load_file(filename, resume_at=0):
             duration = tend-tstart
             last_runtimes.append(1/duration)
 
-            average_duration = average_duration + ((duration-average_duration)/count)
+            average_duration = average_duration + ((duration-average_duration)/(count-resume_at))
             tstart = tend  # next loop iteration start time is this loop iteration end time.
 
 
