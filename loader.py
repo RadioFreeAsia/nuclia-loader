@@ -276,14 +276,14 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
 
-    if args.language not in VALID_LANGUAGES:
+    if args.knowledgebox not in VALID_LANGUAGES:
         print(f"only {VALID_LANGUAGES} are supported")
         exit(1)
     else:
-        if args.language == "RadioFreeAsia":
+        if args.knowledgebox == "RadioFreeAsia":
             KB = configuration.RadioFreeAsia_KB
             API_KEY = configuration.keys_config.McFadden_Owner_key
-        if args.language == "Burmese":
+        if args.knowledgebox == "Burmese":
             KB = configuration.Burmese_KB
             API_KEY = configuration.keys_config.Burmese_Key
 

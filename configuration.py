@@ -2,7 +2,7 @@
 
 # you must create your own 'keys_config.py" and add these strings
 # but do not add 'keys_config.py' to a public repo - it's privileged information
-import keys_confg
+import keys_confg as keys_config
 from keys_confg import API_KEY, Account_UID
 
 
