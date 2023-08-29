@@ -8,6 +8,7 @@ import ijson
 from datetime import datetime, timedelta
 
 from nuclia import sdk
+import configuration
 from configuration import API_KEY
 from configuration import KB
 from configuration import cloud_endpoint
@@ -55,13 +56,19 @@ LANGUAGE_LABELS = {'burmese': "Burmese",
                    'thai': "Thai"
                    }
 
+VALID_LANGUAGES = ("RadioFreeAsia", "Burmese")
 
 def process_args():
-    parser = argparse.ArgumentParser(description="""Load nuclia with a json file from plone export.
+    parser = argparse.ArgumentParser(description="""Load nuclia with a knowledgebox name and json file from plone export.
                                                  adding an --id argument will search the json file for a record with a
                                                  matching "@id" and only upload that record.
                                                  Note only 'story' types are expected""",
-                                     usage="usage: loader.py <filename> [--id=<id>]")
+                                     usage="usage: loader.py <knowledgebox> <filename> [--id=<id>]")
+    parser.add_argument("knowledgebox",
+                        help="language name for knowledgebox."
+                             f"supported: {VALID_LANGUAGES}",
+                        )
+
     parser.add_argument("filename",
                         help="filename of json export",
                         )
@@ -189,33 +196,34 @@ def load_one(item):
     uri = f"{cloud_endpoint}/kb/{KB}"
     logger.info(f"adding resource for {item['@id']}, language {item['language']['token']}")
     res = sdk.NucliaResource()
-    res.create(
-        url=uri,
-        api_key=API_KEY,
-        title=item['title'],
-        slug=item['UID'],
-        metadata={
-            "language": item['language']['token'],
-        },
-        usermetadata={
-            "classifications": [
-                {"labelset": "Language Service", "label": item['language_service']},
-            ],
-        },
-        origin={
-            "url": item['@id'],
-            "tags": item['subjects'],
-            "created": item['effective'],
-            "modified": item['modified'],
-        },
-        summary=item['description'],
-        texts={
-            "body": {
-                "body": item['text']['data'],
-                "format": "HTML",
-            }
-        },
-    )
+    import pdb; pdb.set_trace()
+    # res.create(
+    #     url=uri,
+    #     api_key=API_KEY,
+    #     title=item['title'],
+    #     slug=item['UID'],
+    #     metadata={
+    #         "language": item['language']['token'],
+    #     },
+    #     usermetadata={
+    #         "classifications": [
+    #             {"labelset": "Language Service", "label": item['language_service']},
+    #         ],
+    #     },
+    #     origin={
+    #         "url": item['@id'],
+    #         "tags": item['subjects'],
+    #         "created": item['effective'],
+    #         "modified": item['modified'],
+    #     },
+    #     summary=item['description'],
+    #     texts={
+    #         "body": {
+    #             "body": item['text']['data'],
+    #             "format": "HTML",
+    #         }
+    #     },
+    # )
 
     # Using "tags" to store the subjects is fine, but you also can decide to use Nuclia labels,
     # like this:
@@ -267,6 +275,17 @@ if __name__ == "__main__":
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
+
+    if args.language not in VALID_LANGUAGES:
+        print(f"only {VALID_LANGUAGES} are supported")
+        exit(1)
+    else:
+        if args.language == "RadioFreeAsia":
+            KB = configuration.RadioFreeAsia_KB
+            API_KEY = configuration.keys_config.McFadden_Owner_key
+        if args.language == "Burmese":
+            KB = configuration.Burmese_KB
+            API_KEY = configuration.keys_config.Burmese_Key
 
     if args.id is not None:
         load_id(args.id, args.filename)
