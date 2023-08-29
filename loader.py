@@ -196,34 +196,33 @@ def load_one(item):
     uri = f"{cloud_endpoint}/kb/{KB}"
     logger.info(f"adding resource for {item['@id']}, language {item['language']['token']}")
     res = sdk.NucliaResource()
-    import pdb; pdb.set_trace()
-    # res.create(
-    #     url=uri,
-    #     api_key=API_KEY,
-    #     title=item['title'],
-    #     slug=item['UID'],
-    #     metadata={
-    #         "language": item['language']['token'],
-    #     },
-    #     usermetadata={
-    #         "classifications": [
-    #             {"labelset": "Language Service", "label": item['language_service']},
-    #         ],
-    #     },
-    #     origin={
-    #         "url": item['@id'],
-    #         "tags": item['subjects'],
-    #         "created": item['effective'],
-    #         "modified": item['modified'],
-    #     },
-    #     summary=item['description'],
-    #     texts={
-    #         "body": {
-    #             "body": item['text']['data'],
-    #             "format": "HTML",
-    #         }
-    #     },
-    # )
+    res.create(
+        url=uri,
+        api_key=API_KEY,
+        title=item['title'],
+        slug=item['UID'],
+        metadata={
+            "language": item['language']['token'],
+        },
+        usermetadata={
+            "classifications": [
+                {"labelset": "Language Service", "label": item['language_service']},
+            ],
+        },
+        origin={
+            "url": item['@id'],
+            "tags": item['subjects'],
+            "created": item['effective'],
+            "modified": item['modified'],
+        },
+        summary=item['description'],
+        texts={
+            "body": {
+                "body": item['text']['data'],
+                "format": "HTML",
+            }
+        },
+    )
 
     # Using "tags" to store the subjects is fine, but you also can decide to use Nuclia labels,
     # like this:
@@ -280,6 +279,7 @@ if __name__ == "__main__":
         print(f"only {VALID_LANGUAGES} are supported")
         exit(1)
     else:
+        logger.debug(f"using {args.knowledgebox} knowledgebox")
         if args.knowledgebox == "RadioFreeAsia":
             KB = configuration.RadioFreeAsia_KB
             API_KEY = configuration.keys_config.McFadden_Owner_key
