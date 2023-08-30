@@ -56,7 +56,7 @@ LANGUAGE_LABELS = {'burmese': "Burmese",
                    'thai': "Thai"
                    }
 
-VALID_LANGUAGES = ("RadioFreeAsia", "Burmese")
+VALID_KNOWLEDGEBOXES = ("RadioFreeAsia", "Burmese")
 
 def process_args():
     parser = argparse.ArgumentParser(description="""Load nuclia with a knowledgebox name and json file from plone export.
@@ -66,7 +66,7 @@ def process_args():
                                      usage="usage: loader.py <knowledgebox> <filename> [--id=<id>]")
     parser.add_argument("knowledgebox",
                         help="language name for knowledgebox."
-                             f"supported: {VALID_LANGUAGES}",
+                             f"supported: {VALID_KNOWLEDGEBOXES}",
                         )
 
     parser.add_argument("filename",
@@ -275,8 +275,8 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
 
-    if args.knowledgebox not in VALID_LANGUAGES:
-        print(f"only {VALID_LANGUAGES} are supported")
+    if args.knowledgebox not in VALID_KNOWLEDGEBOXES:
+        print(f"only {VALID_KNOWLEDGEBOXES} are supported")
         exit(1)
     else:
         logger.debug(f"using {args.knowledgebox} knowledgebox")
