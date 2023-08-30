@@ -1,4 +1,4 @@
-
+import sys, traceback
 import argparse
 import re
 import logging
@@ -8,6 +8,7 @@ import ijson
 from datetime import datetime, timedelta
 
 from nuclia import sdk
+from nucliadb_sdk.v2.exceptions import ConflictError
 import configuration
 from configuration import API_KEY
 from configuration import KB
@@ -17,6 +18,8 @@ from validator import validate
 
 from collections import deque
 from statistics import mean
+
+
 
 logging.basicConfig(level=logging.INFO,
                     format='%(levelname)s:%(asctime)s:%(name)s:%(message)s',
@@ -105,6 +108,7 @@ def load_file(filename, resume_at=0):
 
     last_runtimes = deque()
     window_average = 10
+    upload_errors = {}
 
     with open(filename, 'r') as filep:
 
@@ -134,8 +138,18 @@ def load_file(filename, resume_at=0):
 
             try:
                 load_one(item)
+            except ConflictError as e:
+                logger.error(f"{item['UID']} already exists.  Maybe we should PATCH?")
+                if 'ConflictError' not in upload_errors:
+                    upload_errors['ConflictError'] = []
+                upload_errors['ConflictError'].append(f"{item['UID']}, {item['@id']}")
             except Exception as e:
                 logger.error(e, exc_info=True)
+                exception_name = e.__class__.__name__
+                if exception_name not in upload_errors:
+                    upload_errors[exception_name] = []
+                ex_type, ex, tb = sys.exc_info()
+                upload_errors[exception_name].append(f"{item['UID']}: {traceback.print_tb(tb)}")
 
             count += 1
             logger.info(f"{count} of {total_published} | {count/total_published:.1%} complete")
@@ -162,6 +176,8 @@ def load_file(filename, resume_at=0):
             average_duration = average_duration + ((duration-average_duration)/(count-resume_at))
             tstart = tend  # next loop iteration start time is this loop iteration end time.
 
+    # output the upload errors to stderr:
+    print(f"{upload_errors}", file=sys.stderr)
 
 def load_id(item_id, filename):
     """ given a specific ID from the plone export file,
@@ -182,6 +198,7 @@ def load_id(item_id, filename):
                     load_one(item)
                 except Exception as e:
                     logger.error(e, exc_info=True)
+                    raise
 
                 break
 
