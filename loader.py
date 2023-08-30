@@ -149,9 +149,11 @@ def load_file(filename, resume_at=0):
 
 
             # figure out the estimated time to completion.
-            remaining_time = (total_published - count) * average_duration
-            logger.info(f"rate: {rate:.4f} items/second ETA: {remaining_time:.0f} seconds |" +
-                        f"{(datetime.now()+timedelta(seconds=remaining_time)).strftime('%Y-%m-%d %X')}")
+            remaining_seconds = (total_published - count) * average_duration
+            delta = timedelta(seconds=int(remaining_seconds))
+            (h, m, s) = f"{delta}".split(':')
+            logger.info(f"rate: {rate:.4f} items/second ETA: {h}h {m}m {s}s |" +
+                        f"{(datetime.now()+timedelta(seconds=remaining_seconds)).strftime('%Y-%m-%d %X')}")
 
             tend = time.monotonic()
             duration = tend-tstart
