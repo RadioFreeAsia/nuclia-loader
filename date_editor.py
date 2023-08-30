@@ -25,7 +25,7 @@ logger = logging.getLogger("nuclia date editor")
 def process_args():
     parser = argparse.ArgumentParser(description="""Update the creation date metadata by editing existing records
                                                    to place the correct 'effective' date in""",
-                                     usage="usage: date_editor.py <filename> [--id=<id>] [--resume_at=N]")
+                                     usage="usage: date_editor.py <filename> [--id=<id> | --slug=<slug>] [--resume_at=N]")
     parser.add_argument("filename",
                         help="filename of json export",
                         )
@@ -38,7 +38,11 @@ def process_args():
                         )
 
     parser.add_argument("--id",
-                        help="upload only a single ID from file",
+                        help="find a item by @id from input file and edit that resource's date",
+                        )
+
+    parser.add_argument("--slug", "--uid",
+                        help="find a item by UID from input file and edit that resource's date"
                         )
 
 
@@ -123,18 +127,21 @@ def load_file(filename, resume_at=0):
             tstart = tend  # next loop iteration start time is this loop iteration end time.
 
 
-def edit_id(item_id, filename):
-    """ given a specific ID from the plone export file,
+def edit_id(item_id=None, item_uid=None, filename=None):
+    """ given a specific ID or UID from the plone export file,
         find that ID in the json export and only edit that single date.
     """
-    logger.debug(f"searching for item[@id]={item_id}")
+    if filename is None:
+        raise FileNotFoundError("provide a filename.")
+
+    logger.debug(f"searching for item[@id]={item_id} or item[UID]={item_uid}")
     with open(filename, 'r') as filep:
 
         # stream it from json into objects one item at a time
         objects = ijson.items(filep, 'item')
         found = False
         for item in objects:
-            if item.get('@id') == item_id:
+            if item.get('@id') == item_id or item.get('UID') == item_uid:
                 found = True
                 logger.debug(f"found slug {item['UID']}:  {item['title']}")
                 item = preprocess_item(item)
@@ -155,7 +162,7 @@ def edit_id(item_id, filename):
                 break
 
         if not found:
-            logger.warning(f"id {item_id} not found in {filename}")
+            logger.warning(f"id {item_id} / uid {item_uid} not found in {filename}")
 
 
 def edit_one(slug, data):
@@ -180,7 +187,7 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
 
-    if args.id is not None:
-        edit_id(args.id, args.filename)
+    if args.id or args.slug is not None:
+        edit_id(item_id=args.id, item_uid=args.slug, filename=args.filename)
     else:
         load_file(args.filename, args.resume_at)
