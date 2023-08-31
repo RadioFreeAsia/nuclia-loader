@@ -12,5 +12,8 @@ REGION = "europe-1"
 
 RadioFreeAsia_KB = "1194b6c4-fc68-4dcf-b969-49b96380bfe9"
 Burmese_KB = "ab767fdf-280f-419f-88c3-ea3b95c2c944"
+Uyghur_KB = "02e6b210-079c-496f-b5ed-e01a24ba5d1e"
+
+
 
 KB = RadioFreeAsia_KB

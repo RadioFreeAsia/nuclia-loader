@@ -305,6 +305,10 @@ if __name__ == "__main__":
         if args.knowledgebox == "Burmese":
             KB = configuration.Burmese_KB
             API_KEY = configuration.keys_config.Burmese_Key
+        if args.knowledgebox == "Uyghur":
+            KB = configuration.Uyghur_KB
+            API_KEY = configuration.keys_confg.Mcfadden_Owner_key
+
 
     if args.id is not None:
         load_id(args.id, args.filename)
