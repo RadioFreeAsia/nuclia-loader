@@ -196,8 +196,9 @@ def load_id(item_id, filename):
 
                 try:
                     load_one(item)
+                except ConflictError as e:
+                    logger.error(f"{item['UID']} already exists.  Maybe we should PATCH?")
                 except Exception as e:
-                    logger.error(e, exc_info=True)
                     raise
 
                 break
