@@ -19,7 +19,7 @@ VALID_KNOWLEDGEBOXES = ("RadioFreeAsia", "Burmese", "Uyghur")
 
 
 def get_kb_config(knowledgebox):
-    if args.knowledgebox not in VALID_KNOWLEDGEBOXES:
+    if knowledgebox not in VALID_KNOWLEDGEBOXES:
         logger.error(f"only {VALID_KNOWLEDGEBOXES} are supported")
         raise ValueError
     if knowledgebox == "RadioFreeAsia":
