@@ -74,7 +74,7 @@ def process_args():
 
     parser.add_argument("knowledgebox",
                         help="language name for knowledgebox."
-                             f"supported: {configuration.VALID_KNOWLEDGEBOXES}",
+                             f"supported: {configuration.kb_config.keys()}",
                         )
 
     parser.add_argument("filename",
