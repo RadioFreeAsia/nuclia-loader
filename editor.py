@@ -218,6 +218,11 @@ def edit_one(slug, data):
     uri = f"{configuration.cloud_endpoint}/kb/{KB}"
     logger.info(f"editing resource {slug}")
     res = sdk.NucliaResource()
+    logger.debug(f"""
+                     slug = {slug}
+                     data = {data}
+
+                  """)
     if not FAKE_IT:
         res.update(url=uri,
                    api_key=API_KEY,
