@@ -94,6 +94,7 @@ def process_args():
     parser.add_argument("--max",
                         type=int,
                         help="max number to upload from file.  Program will exit after uploading 'max' items",
+                        default=None
                         )
 
     parser.add_argument("-v", "--verbose",
