@@ -59,14 +59,20 @@ LANGUAGE_LABELS = {'burmese': "Burmese",
                    'thai': "Thai"
                    }
 
-VALID_KNOWLEDGEBOXES = ("RadioFreeAsia", "Burmese")
+VALID_KNOWLEDGEBOXES = ("RadioFreeAsia", "Burmese", "Uyghur")
+FAKE_IT = False #global override for debugging and not actually uploading.
 
 def process_args():
     parser = argparse.ArgumentParser(description="""Load nuclia with a knowledgebox name and json file from plone export.
                                                  adding an --id argument will search the json file for a record with a
                                                  matching "@id" and only upload that record.
                                                  Note only 'story' types are expected""",
-                                     usage="usage: loader.py <knowledgebox> <filename> [--id=<id>]")
+                                     usage="""usage: loader.py <knowledgebox> <filename> 
+                                                     --id=<id> --resume_at=<index>
+                                                     --max=number
+                                                     -v"""
+                                     )
+
     parser.add_argument("knowledgebox",
                         help="language name for knowledgebox."
                              f"supported: {VALID_KNOWLEDGEBOXES}",
@@ -86,10 +92,16 @@ def process_args():
     parser.add_argument("--id",
                         help="upload only a single ID from file",
                         )
-
+    parser.add_argument("--max",
+                        help="max number to upload from file.  Program will exit after uploading 'max' items",
+                        )
 
     parser.add_argument("-v", "--verbose",
                         help="turn on debug",
+                        action="store_true")
+
+    parser.add_argument("--fake-it",
+                        help="do everything except upload something.",
                         action="store_true")
 
     parsed_args = parser.parse_args()
@@ -97,7 +109,7 @@ def process_args():
     return parsed_args
 
 
-def load_file(filename, resume_at=0):
+def load_file(filename, resume_at=0, max_uploads=None):
 
     logger.debug(f"counting objects in {filename}")
     (objects, unpublished, errors) = validate(filename)
@@ -109,6 +121,17 @@ def load_file(filename, resume_at=0):
     last_runtimes = deque()
     window_average = 10
     upload_errors = {}
+
+    if resume_at < 0:
+        resume_at = 0
+    if max_uploads is not None and resume_at:
+        logger.error("combining max and resume_at is not supported")
+        raise ValueError
+
+    target_uploads = total_published
+    if max_uploads is not None:
+        logger.info(f"Maximum number of uploads set to {max_uploads}")
+        target_uploads = max_uploads
 
     with open(filename, 'r') as filep:
 
@@ -152,7 +175,7 @@ def load_file(filename, resume_at=0):
                 upload_errors[exception_name].append(f"{item['UID']}: {traceback.print_tb(tb)}")
 
             count += 1
-            logger.info(f"{count} of {total_published} | {count/total_published:.1%} complete")
+            logger.info(f"{count} of {target_uploads} | {count/target_uploads:.1%} complete")
 
             #print running average rate:
             if len(last_runtimes) > window_average:
@@ -163,7 +186,7 @@ def load_file(filename, resume_at=0):
 
 
             # figure out the estimated time to completion.
-            remaining_seconds = (total_published - count) * average_duration
+            remaining_seconds = (target_uploads - count) * average_duration
             delta = timedelta(seconds=int(remaining_seconds))
             (h, m, s) = f"{delta}".split(':')
             logger.info(f"rate: {rate:.4f} items/second ETA: {h}h {m}m {s}s |" +
@@ -174,7 +197,15 @@ def load_file(filename, resume_at=0):
             last_runtimes.append(1/duration)
 
             average_duration = average_duration + ((duration-average_duration)/(count-resume_at))
+
+            if max_uploads is not None and count >= max_uploads:
+                logger.info("maximum uploads reached.  Exiting.")
+                break
+
+            # leave this as the last line of the loop - always
             tstart = tend  # next loop iteration start time is this loop iteration end time.
+
+
 
     # output the upload errors to stderr:
     print(f"{upload_errors}", file=sys.stderr)
@@ -216,43 +247,38 @@ def load_one(item):
     uri = f"{cloud_endpoint}/kb/{KB}"
     logger.info(f"adding resource for {item['@id']}, language {item['language']['token']}")
     res = sdk.NucliaResource()
-    res.create(
-        url=uri,
-        api_key=API_KEY,
-        title=item['title'],
-        slug=item['UID'],
-        metadata={
-            "language": item['language']['token'],
-        },
-        usermetadata={
-            "classifications": [
-                {"labelset": "Language Service", "label": item['language_service']},
-            ],
-        },
-        origin={
-            "url": item['@id'],
-            "tags": item['subjects'],
-            "created": item['effective'],
-            "modified": item['modified'],
-        },
-        summary=item['description'],
-        texts={
-            "body": {
-                "body": item['text']['data'],
-                "format": "HTML",
-            }
-        },
-    )
+    if not FAKE_IT:
+        res.create(
+            url=uri,
+            api_key=API_KEY,
+            title=item['title'],
+            slug=item['UID'],
+            metadata={
+                "language": item['language']['token'],
+            },
+            thumbnail=item['thumb_url'],
+            usermetadata={
+                "classifications": [
+                    {"labelset": "Language Service", "label": item['language_service']},
+                ],
+            },
+            origin={
+                "url": item['@id'],
+                "tags": item['subjects'],
+                "created": item['effective'],
+                "modified": item['modified'],
+            },
+            summary=item['description'],
+            texts={
+                "body": {
+                    "body": item['text']['data'],
+                    "format": "HTML",
+                }
+            },
+        )
+    else:
+        logger.warning("Faked request - upload did not occur")
 
-    # Using "tags" to store the subjects is fine, but you also can decide to use Nuclia labels,
-    # like this:
-
-    # usermetadata={
-    #     "classifications": [
-    #         {"labelset": "subjects", "label": "<Topic 1>"},
-    #         {"labelset": "subjects", "label": "<Topic 2>"},
-    #     ],
-    # }
 
 def preprocess_item(item):
     # fix the ID, so it points to a published resource, not a test or dev uri
@@ -310,10 +336,12 @@ if __name__ == "__main__":
             KB = configuration.Uyghur_KB
             API_KEY = configuration.keys_confg.Mcfadden_Owner_key
 
+    if args.fake_it:
+        FAKE_IT = True  #global
 
     if args.id is not None:
         load_id(args.id, args.filename)
     else:
-        load_file(args.filename, args.resume_at)
+        load_file(args.filename, args.resume_at, args.max)
 
 
