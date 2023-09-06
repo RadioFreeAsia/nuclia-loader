@@ -23,13 +23,13 @@ def get_kb_config(knowledgebox):
         logger.error(f"only {VALID_KNOWLEDGEBOXES} are supported")
         raise ValueError
     if knowledgebox == "RadioFreeAsia":
-        KB = configuration.RadioFreeAsia_KB
-        API_KEY = configuration.keys_config.McFadden_Owner_key
+        KB = RadioFreeAsia_KB
+        API_KEY = keys_config.McFadden_Owner_key
     if knowledgebox == "Burmese":
-        KB = configuration.Burmese_KB
-        API_KEY = configuration.keys_config.Burmese_Key
+        KB = Burmese_KB
+        API_KEY = keys_config.Burmese_Key
     if knowledgebox == "Uyghur":
-        KB = configuration.Uyghur_KB
-        API_KEY = configuration.keys_config.McFadden_Uyghur_Key
+        KB = Uyghur_KB
+        API_KEY = keys_config.McFadden_Uyghur_Key
 
     return (KB, API_KEY)
