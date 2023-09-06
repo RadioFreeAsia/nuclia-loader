@@ -10,9 +10,6 @@ from datetime import datetime, timedelta
 from nuclia import sdk
 from nucliadb_sdk.v2.exceptions import ConflictError
 import configuration
-from configuration import API_KEY
-from configuration import KB
-from configuration import cloud_endpoint
 
 from validator import validate
 
@@ -59,8 +56,10 @@ LANGUAGE_LABELS = {'burmese': "Burmese",
                    'thai': "Thai"
                    }
 
-VALID_KNOWLEDGEBOXES = ("RadioFreeAsia", "Burmese", "Uyghur")
+#Globals
 FAKE_IT = False #global override for debugging and not actually uploading.
+KB = None #set during argparse
+API_KEY = None #set during argparse
 
 def process_args():
     parser = argparse.ArgumentParser(description="""Load nuclia with a knowledgebox name and json file from plone export.
@@ -177,7 +176,7 @@ def load_file(filename, resume_at=0, max_uploads=None):
                 if exception_name not in upload_errors:
                     upload_errors[exception_name] = []
                 ex_type, ex, tb = sys.exc_info()
-                upload_errors[exception_name].append(f"{item['UID']}: {traceback.print_tb(tb)}")
+                upload_errors[exception_name].append(f"{item['UID']}, {item['@id']} : {traceback.print_tb(tb)}")
 
             count += 1
             logger.info(f"{count} of {target_uploads} | {count/target_uploads:.1%} complete")
@@ -245,7 +244,7 @@ def load_one(item):
     # the corresponding Nuclia-specific unique id.
     #
 
-    uri = f"{cloud_endpoint}/kb/{KB}"
+    uri = f"{configuration.cloud_endpoint}/kb/{KB}"
     logger.info(f"adding resource for {item['@id']}, language {item['language']['token']}")
     res = sdk.NucliaResource()
     logger.debug(f"""
@@ -263,7 +262,6 @@ def load_one(item):
             metadata={
                 "language": item['language']['token'],
             },
-            thumbnail=item['thumbnail'],
             usermetadata={
                 "classifications": [
                     {"labelset": "Language Service", "label": item['language_service']},
@@ -274,6 +272,7 @@ def load_one(item):
                 "tags": item['subjects'],
                 "created": item['effective'],
                 "modified": item['modified'],
+                "metadata": {"thumbnail": item['thumbnail']}
             },
             summary=item['description'],
             texts={
@@ -336,20 +335,8 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
 
-    if args.knowledgebox not in VALID_KNOWLEDGEBOXES:
-        print(f"only {VALID_KNOWLEDGEBOXES} are supported")
-        exit(1)
-    else:
-        logger.debug(f"using {args.knowledgebox} knowledgebox")
-        if args.knowledgebox == "RadioFreeAsia":
-            KB = configuration.RadioFreeAsia_KB
-            API_KEY = configuration.keys_config.McFadden_Owner_key
-        if args.knowledgebox == "Burmese":
-            KB = configuration.Burmese_KB
-            API_KEY = configuration.keys_config.Burmese_Key
-        if args.knowledgebox == "Uyghur":
-            KB = configuration.Uyghur_KB
-            API_KEY = configuration.keys_config.McFadden_Owner_key
+    logger.debug(f"using {args.knowledgebox} knowledgebox")
+    (KB, API_KEY) = configuration.get_kb_config(args.knowledgebox)
 
     if args.fake_it:
         FAKE_IT = True  #global
