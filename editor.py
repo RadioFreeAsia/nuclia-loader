@@ -136,7 +136,7 @@ def load_file(filename, resume_at=0, max_uploads=None):
                               "modified": item['modified'],
                               "metadata": {"thumbnail": item['thumbnail']}
                               }
-            }
+                          }
 
             try:
                 edit_one(slug=slug, data=new_origin)
@@ -144,7 +144,7 @@ def load_file(filename, resume_at=0, max_uploads=None):
                 logger.error(e, exc_info=True)
 
             count += 1
-            logger.info(f"{count} of {total_published} | {count/total_published:.1%} complete")
+            logger.info(f"{count} of {target_uploads} | {count/target_uploads:.1%} complete")
 
             #print running average rate:
             if len(last_runtimes) > window_average:
@@ -155,15 +155,19 @@ def load_file(filename, resume_at=0, max_uploads=None):
 
 
             # figure out the estimated time to completion.
-            remaining_time = (total_published - count) * average_duration
-            logger.info(f"rate: {rate:.4f} items/second ETA: {remaining_time:.0f} seconds |" +
-                        f"{(datetime.now()+timedelta(seconds=remaining_time)).strftime('%Y-%m-%d %X')}")
+            remaining_seconds = (target_uploads - count) * average_duration
+            delta = timedelta(seconds=int(remaining_seconds))
+            (h, m, s) = f"{delta}".split(':')
+            logger.info(f"rate: {rate:.4f} items/second ETA: {h}h {m}m {s}s |" +
+                        f"{(datetime.now()+timedelta(seconds=remaining_seconds)).strftime('%Y-%m-%d %X')}")
 
             tend = time.monotonic()
             duration = tend-tstart
             last_runtimes.append(1/duration)
 
-            average_duration = average_duration + ((duration-average_duration)/count)
+            average_duration = average_duration + ((duration-average_duration)/(count-resume_at))
+
+            # leave this as the last line of the loop - always
             tstart = tend  # next loop iteration start time is this loop iteration end time.
 
 
