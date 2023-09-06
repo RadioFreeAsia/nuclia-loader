@@ -273,8 +273,9 @@ def load_one(item):
                 "tags": item['subjects'],
                 "created": item['effective'],
                 "modified": item['modified'],
-                "metadata": {"thumbnail": item['thumbnail']}
+                # "metadata": {"thumbnail": item['thumbnail']}
             },
+            extra={"metadata": {"thumbnail": item['thumbnail']}},
             summary=item['description'],
             texts={
                 "body": {
