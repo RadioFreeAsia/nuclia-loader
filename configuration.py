@@ -25,22 +25,26 @@ Vietnamese_KB = "7bcc1511-3fce-4747-91f5-dfee8d82913b"
 Indonesian_KB = "013ee2f8-3247-418c-9af8-2c2ec1bacfd1"
 Malay_KB = "b0407bad-2f20-482b-99c0-cb225189a827"
 
-KB = RadioFreeAsia_KB
-VALID_KNOWLEDGEBOXES = ("RadioFreeAsia", "Burmese", "Uyghur")
-
+kb_config = {"RadioFreeAsia": (RadioFreeAsia_KB, keys_config.McFadden_Owner_key),
+             "Burmese": (Burmese_KB, keys_config.Burmese_Key),
+             "Uyghur": (Uyghur_KB, keys_config.Uyghur_Key),
+             "Mandarin": (Mandarin_KB, keys_config.Mandarin_Key),
+             "Bengali": (Bengali_KB, keys_config.Bengali_Key),
+             "Cantonese": (Cantonese_KB, keys_config.Cantonese_Key),
+             "Indonesian": (Indonesian_KB, keys_config.Indonesian_Key),
+             "Khmer": (Khmer_KB, keys_config.Khmer_Key),
+             "Lao": (Lao_KB, keys_config.Lao_Key),
+             "Vietnamese": (Vietnamese_KB, keys_config.Vietnamese_Key),
+             "Malay": (Malay_KB, keys_config.Malay_Key),
+             "Korean": (Korean_KB, keys_config.Korean_Key),
+             "Tibetan": (Tibetan_KB, keys_config.Tibetan_Key),
+             "Thai": (Thai_KB, keys_config.Thai_Key),
+             }
 
 def get_kb_config(knowledgebox):
-    if knowledgebox not in VALID_KNOWLEDGEBOXES:
-        logger.error(f"only {VALID_KNOWLEDGEBOXES} are supported")
+    try:
+        return kb_config[knowledgebox]
+    except KeyError:
+        logger.error(f"unknown Knowledgebox {knowledgebox}")
         raise ValueError
-    if knowledgebox == "RadioFreeAsia":
-        KB = RadioFreeAsia_KB
-        API_KEY = keys_config.McFadden_Owner_key
-    if knowledgebox == "Burmese":
-        KB = Burmese_KB
-        API_KEY = keys_config.Burmese_Key
-    if knowledgebox == "Uyghur":
-        KB = Uyghur_KB
-        API_KEY = keys_config.McFadden_Uyghur_Key
 
-    return (KB, API_KEY)
