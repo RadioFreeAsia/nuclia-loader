@@ -93,6 +93,7 @@ def process_args():
                         help="upload only a single ID from file",
                         )
     parser.add_argument("--max",
+                        type=int,
                         help="max number to upload from file.  Program will exit after uploading 'max' items",
                         )
 
@@ -157,6 +158,10 @@ def load_file(filename, resume_at=0, max_uploads=None):
                 count += 1
                 continue
 
+            if max_uploads is not None and count >= max_uploads:
+                logger.info("maximum uploads reached.  Exiting.")
+                break
+
             item = preprocess_item(item)
 
             try:
@@ -197,10 +202,6 @@ def load_file(filename, resume_at=0, max_uploads=None):
             last_runtimes.append(1/duration)
 
             average_duration = average_duration + ((duration-average_duration)/(count-resume_at))
-
-            if max_uploads is not None and count >= max_uploads:
-                logger.info("maximum uploads reached.  Exiting.")
-                break
 
             # leave this as the last line of the loop - always
             tstart = tend  # next loop iteration start time is this loop iteration end time.
@@ -247,6 +248,12 @@ def load_one(item):
     uri = f"{cloud_endpoint}/kb/{KB}"
     logger.info(f"adding resource for {item['@id']}, language {item['language']['token']}")
     res = sdk.NucliaResource()
+    logger.debug(f"""
+                     title = {item['title']}
+                     slug = {item['UID']}
+                     thumbnail = {item['thumbnail']}
+                     created = {item['effective']}
+                  """)
     if not FAKE_IT:
         res.create(
             url=uri,
@@ -256,7 +263,7 @@ def load_one(item):
             metadata={
                 "language": item['language']['token'],
             },
-            thumbnail=item['thumb_url'],
+            thumbnail=item['thumbnail'],
             usermetadata={
                 "classifications": [
                     {"labelset": "Language Service", "label": item['language_service']},
@@ -282,10 +289,10 @@ def load_one(item):
 
 def preprocess_item(item):
     # fix the ID, so it points to a published resource, not a test or dev uri
-    pattern = ".*\.rfaweb.org"
-    item['@id'] = re.sub(pattern, "https://www.rfa.org", item['@id'])
-    pattern = "https://.*\.benarnews.org"
-    item['@id'] = re.sub(pattern, "https://www.benarnews.org", item['@id'])
+    rfa_pattern = ".*\.rfaweb.org"
+    item['@id'] = re.sub(rfa_pattern, "https://www.rfa.org", item['@id'])
+    benar_pattern = "https://.*\.benarnews.org"
+    item['@id'] = re.sub(benar_pattern, "https://www.benarnews.org", item['@id'])
 
     # set description to None if it's blank:
     if not item['description'] or item['description'].isspace():
@@ -311,6 +318,14 @@ def preprocess_item(item):
                         "content-type": "text/html"
                         }
 
+    #set the thumbnail URL:
+    if item['featured_image'] is not None:
+        item['thumbnail'] = item['featured_image']['@id'] + "/@@images/image/thumb"
+        item['thumbnail'] = re.sub(rfa_pattern, "https://www.rfa.org", item['thumbnail'])
+        item['thumbnail'] = re.sub(benar_pattern, "https://www.benarnews.org", item['thumbnail'])
+    else:
+        item['thumbnail'] = None
+
     return item
 
 
@@ -334,7 +349,7 @@ if __name__ == "__main__":
             API_KEY = configuration.keys_config.Burmese_Key
         if args.knowledgebox == "Uyghur":
             KB = configuration.Uyghur_KB
-            API_KEY = configuration.keys_confg.Mcfadden_Owner_key
+            API_KEY = configuration.keys_config.McFadden_Owner_key
 
     if args.fake_it:
         FAKE_IT = True  #global
