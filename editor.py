@@ -6,9 +6,7 @@ import ijson
 from datetime import datetime, timedelta
 
 from nuclia import sdk
-from configuration import API_KEY
-from configuration import KB
-from configuration import cloud_endpoint
+import configuration
 
 from validator import validate
 
@@ -20,12 +18,21 @@ from loader import preprocess_item
 logging.basicConfig(level=logging.INFO,
                     format='%(levelname)s:%(asctime)s:%(name)s:%(message)s',
                     datefmt="%Y-%m-%d %H:%M:%S")
-logger = logging.getLogger("nuclia date editor")
+logger = logging.getLogger("nuclia origin editor")
+
 
 def process_args():
     parser = argparse.ArgumentParser(description="""Update the creation date metadata by editing existing records
                                                    to place the correct 'effective' date in""",
-                                     usage="usage: date_editor.py <filename> [--id=<id> | --slug=<slug>] [--resume_at=N]")
+                                     usage="""usage: date_editor.py <knowledgebox> <filename> 
+                                              [--id=<id> | --slug=<slug>] 
+                                              [--max=N] [--resume_at=N]"""
+                                     )
+    parser.add_argument("knowledgebox",
+                        help="language name for knowledgebox."
+                             f"supported: {VALID_KNOWLEDGEBOXES}",
+                        )
+
     parser.add_argument("filename",
                         help="filename of json export",
                         )
@@ -45,6 +52,11 @@ def process_args():
                         help="find a item by UID from input file and edit that resource's date"
                         )
 
+    parser.add_argument("--max",
+                        type=int,
+                        help="max number to consume from file.  Program will exit after patching 'max' items",
+                        )
+
 
     parser.add_argument("-v", "--verbose",
                         help="turn on debug",
@@ -53,6 +65,7 @@ def process_args():
     parsed_args = parser.parse_args()
 
     return parsed_args
+
 
 def load_file(filename, resume_at=0):
 
@@ -91,12 +104,15 @@ def load_file(filename, resume_at=0):
 
             item = preprocess_item(item)
             slug = item['UID']
+
             new_origin = {'origin': {
-                "url": item['@id'],
-                "tags": item['subjects'],
-                "created": item['effective'],
-                "modified": item['modified'],
-            }}
+                              "url": item['@id'],
+                              "tags": item['subjects'],
+                              "created": item['effective'],
+                              "modified": item['modified'],
+                              "metadata": {"thumbnail": item['thumbnail']}
+                              }
+            }
 
             try:
                 edit_one(slug=slug, data=new_origin)
@@ -147,11 +163,12 @@ def edit_id(item_id=None, item_uid=None, filename=None):
                 item = preprocess_item(item)
                 slug = item['UID']
                 new_origin = {'origin': {
-                                 "url": item['@id'],
-                                 "tags": item['subjects'],
-                                 "created": item['effective'],
-                                 "modified": item['modified'],
-                                 }
+                              "url": item['@id'],
+                              "tags": item['subjects'],
+                              "created": item['effective'],
+                              "modified": item['modified'],
+                              "metadata": {"thumbnail": item['thumbnail']}
+                              }
                 }
 
                 try:
@@ -170,7 +187,7 @@ def edit_one(slug, data):
        data must be a key-value pair of arguments & data that can be provided to 'update_resource'
        https://docs.nuclia.dev/docs/docs/nucliadb/python_nucliadb_sdk#update_resource """
 
-    uri = f"{cloud_endpoint}/kb/{KB}"
+    uri = f"{configuration.cloud_endpoint}/kb/{KB}"
     logger.info(f"editing resource {slug}")
     res = sdk.NucliaResource()
 
@@ -186,6 +203,9 @@ if __name__ == "__main__":
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
+
+    logger.debug(f"using {args.knowledgebox} knowledgebox")
+    (KB, API_KEY) = configuration.get_kb_config(args.knowledgebox)
 
     if args.id or args.slug is not None:
         edit_id(item_id=args.id, item_uid=args.slug, filename=args.filename)
