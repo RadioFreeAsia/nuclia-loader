@@ -128,18 +128,19 @@ def load_file(filename, resume_at=0, max_uploads=None):
 
             item = preprocess_item(item)
             slug = item['UID']
-
-            new_origin = {'origin': {
-                              "url": item['@id'],
-                              "tags": item['subjects'],
-                              "created": item['effective'],
-                              "modified": item['modified'],
-                              "metadata": {"thumbnail": item['thumbnail']}
-                              }
-                          }
-
+            new_data = {
+                'origin': {
+                    "url": item['@id'],
+                    "tags": item['subjects'],
+                    "created": item['effective'],
+                    "modified": item['modified'],
+                },
+                "extra": {
+                    "metadata": {"thumbnail": item['thumbnail']}
+                }
+            }
             try:
-                edit_one(slug=slug, data=new_origin)
+                edit_one(slug=slug, data=new_data)
             except Exception as e:
                 logger.error(e, exc_info=True)
 
@@ -190,17 +191,20 @@ def edit_id(item_id=None, item_uid=None, filename=None):
                 logger.debug(f"found slug {item['UID']}:  {item['title']}")
                 item = preprocess_item(item)
                 slug = item['UID']
-                new_origin = {'origin': {
-                              "url": item['@id'],
-                              "tags": item['subjects'],
-                              "created": item['effective'],
-                              "modified": item['modified'],
-                              "metadata": {"thumbnail": item['thumbnail']}
-                              }
+                new_data = {
+                    'origin': {
+                        "url": item['@id'],
+                        "tags": item['subjects'],
+                        "created": item['effective'],
+                        "modified": item['modified'],
+                    },
+                    "extra": {
+                        "metadata": {"thumbnail": item['thumbnail']}
+                    }
                 }
 
                 try:
-                    edit_one(slug, new_origin)
+                    edit_one(slug, new_data)
                 except Exception as e:
                     logger.error(e, exc_info=True)
 
@@ -221,7 +225,6 @@ def edit_one(slug, data):
     logger.debug(f"""
                      slug = {slug}
                      data = {data}
-
                   """)
     if not FAKE_IT:
         res.update(url=uri,
