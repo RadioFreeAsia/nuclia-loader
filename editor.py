@@ -20,6 +20,10 @@ logging.basicConfig(level=logging.INFO,
                     datefmt="%Y-%m-%d %H:%M:%S")
 logger = logging.getLogger("nuclia origin editor")
 
+#Globals
+FAKE_IT = False #global override for debugging and not actually uploading.
+KB = None #set during argparse
+API_KEY = None #set during argparse
 
 def process_args():
     parser = argparse.ArgumentParser(description="""Update the creation date metadata by editing existing records
@@ -55,8 +59,12 @@ def process_args():
     parser.add_argument("--max",
                         type=int,
                         help="max number to consume from file.  Program will exit after patching 'max' items",
+                        default=None
                         )
 
+    parser.add_argument("--fake-it",
+                        help="do everything except posting to url.",
+                        action="store_true")
 
     parser.add_argument("-v", "--verbose",
                         help="turn on debug",
@@ -67,7 +75,7 @@ def process_args():
     return parsed_args
 
 
-def load_file(filename, resume_at=0):
+def load_file(filename, resume_at=0, max_uploads=None):
 
     logger.debug(f"counting objects in {filename}")
     (objects, unpublished, errors) = validate(filename)
@@ -78,6 +86,18 @@ def load_file(filename, resume_at=0):
 
     last_runtimes = deque()
     window_average = 10
+
+    if resume_at < 0:
+        resume_at = 0
+    if max_uploads is not None and resume_at:
+        logger.error("combining max and resume_at is not supported")
+        raise ValueError
+
+    target_uploads = total_published
+    if max_uploads is not None:
+        logger.info(f"Maximum number of uploads set to {max_uploads}")
+        target_uploads = max_uploads
+
     with open(filename, 'r') as filep:
 
         # stream it from json into objects one item at a time
@@ -101,6 +121,10 @@ def load_file(filename, resume_at=0):
                 logger.info(f"{item['title']} |  skipping up to {count}/{resume_at}")
                 count += 1
                 continue
+
+            if max_uploads is not None and count >= max_uploads:
+                logger.info("maximum uploads reached.  Exiting.")
+                break
 
             item = preprocess_item(item)
             slug = item['UID']
@@ -190,11 +214,13 @@ def edit_one(slug, data):
     uri = f"{configuration.cloud_endpoint}/kb/{KB}"
     logger.info(f"editing resource {slug}")
     res = sdk.NucliaResource()
-
-    res.update(url=uri,
-               api_key=API_KEY,
-               slug=slug,
-               **data)
+    if not FAKE_IT:
+        res.update(url=uri,
+                   api_key=API_KEY,
+                   slug=slug,
+                   **data)
+    else:
+        logger.warning("Faked request - upload did not occur")
 
 
 if __name__ == "__main__":
@@ -204,10 +230,13 @@ if __name__ == "__main__":
         logging.getLogger().setLevel(logging.DEBUG)
         logging.debug("debug on")
 
+    if args.fake_it:
+        FAKE_IT = True  #global
+
     logger.debug(f"using {args.knowledgebox} knowledgebox")
     (KB, API_KEY) = configuration.get_kb_config(args.knowledgebox)
 
     if args.id or args.slug is not None:
         edit_id(item_id=args.id, item_uid=args.slug, filename=args.filename)
     else:
-        load_file(args.filename, args.resume_at)
+        load_file(args.filename, args.resume_at, args.max)
