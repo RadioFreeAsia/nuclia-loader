@@ -320,7 +320,9 @@ def preprocess_item(item):
                         }
 
     #set the thumbnail URL:
-    if item['featured_image'] is not None:
+    if item['image'] is not None:
+        item['thumbnail'] = item['@id']+'/@@images/image/image_thumb_tablet'
+    elif item['featured_image'] is not None:
         item['thumbnail'] = item['featured_image']['@id'] + "/@@images/image/thumb"
         item['thumbnail'] = re.sub(rfa_pattern, "https://www.rfa.org", item['thumbnail'])
         item['thumbnail'] = re.sub(benar_pattern, "https://www.benarnews.org", item['thumbnail'])
