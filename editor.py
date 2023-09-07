@@ -12,7 +12,7 @@ from validator import validate
 
 from collections import deque
 from statistics import mean
-
+from pprint import pformat
 from loader import preprocess_item
 
 logging.basicConfig(level=logging.INFO,
@@ -34,7 +34,7 @@ def process_args():
                                      )
     parser.add_argument("knowledgebox",
                         help="language name for knowledgebox."
-                             f"supported: {configuration.VALID_KNOWLEDGEBOXES}",
+                             f"supported: {configuration.kb_config.keys()}",
                         )
 
     parser.add_argument("filename",
@@ -224,7 +224,7 @@ def edit_one(slug, data):
     res = sdk.NucliaResource()
     logger.debug(f"""
                      slug = {slug}
-                     data = {data}
+                     data = {pformat(data)}
                   """)
     if not FAKE_IT:
         res.update(url=uri,
