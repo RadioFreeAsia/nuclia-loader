@@ -321,14 +321,19 @@ def preprocess_item(item):
                         }
 
     #set the thumbnail URL:
+    if item['featured_image'] is not None:
+        item['thumbnail'] = item['featured_image']['@id']
     if item['image'] is not None:
-        item['thumbnail'] = item['@id']+'/@@images/image/image_thumb_tablet'
-    elif item['featured_image'] is not None:
-        item['thumbnail'] = item['featured_image']['@id'] + "/@@images/image/thumb"
-        item['thumbnail'] = re.sub(rfa_pattern, "https://www.rfa.org", item['thumbnail'])
-        item['thumbnail'] = re.sub(benar_pattern, "https://www.benarnews.org", item['thumbnail'])
+        item['thumbnail'] = item['@id']
+    elif item.get('p4_image') is not None:
+        item['thumbnail'] = item['p4_image']['@id']
     else:
         item['thumbnail'] = None
+
+    if item['thumbnail']:
+        item['thumbnail'] = item['thumbnail'] + "/@@images/image/image_thumb_tablet"
+        item['thumbnail'] = re.sub(rfa_pattern, "https://www.rfa.org", item['thumbnail'])
+        item['thumbnail'] = re.sub(benar_pattern, "https://www.benarnews.org", item['thumbnail'])
 
     return item
 
