@@ -252,7 +252,8 @@ def load_one(item):
                      title = {item['title']}
                      slug = {item['UID']}
                      thumbnail = {item['thumbnail']}
-                     created = {item['effective']}
+                     effective = {item['effective']}  (nuclia 'created')
+                     created = {item['created']}
                   """)
     if not FAKE_IT:
         res.create(
