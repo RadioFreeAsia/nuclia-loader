@@ -1,4 +1,4 @@
-This custom load will take a json output created from plone's 'exportimport' plugin and load data into a Nuclea database via it's REST API.
+This custom loader will take a json output created from plone's 'exportimport' plugin and load data into a Nuclea database via it's REST API.
 
 
 ## Install
